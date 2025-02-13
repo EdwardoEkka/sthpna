@@ -1,11 +1,9 @@
-import { Building2, Users, Calendar, Trophy, HardHat } from "lucide-react";
-import Navbar from "../components/Navbar";
+import { Building2, Users, Calendar, Trophy } from "lucide-react";
 import HomeCarousel from "../components/home-carousel";
 
 function Home() {
   return (
     <div className="bg-secondary min-h-screen text-white">
-      <Navbar />
 
       {/* Hero Section */}
       <section className="pt-20 pb-32 relative">
@@ -158,17 +156,6 @@ function Home() {
 
 
 
-      {/* Footer */}
-      <footer className="bg-secondary py-8">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <HardHat className="h-8 w-8 text-primary mx-auto mb-4" />
-            <p className="text-gray-400">
-              © 2024 Sthapna. All rights reserved.
-            </p>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 }
