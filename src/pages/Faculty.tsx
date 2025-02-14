@@ -32,6 +32,22 @@ const Faculty = () => {
           <p className="mt-2 max-w-xl mx-auto px-4">
             <strong>Specialization:</strong> 	Transportation Engineering
           </p>
+
+          <p className="mt-2 max-w-xl mx-auto px-4">
+            <strong>Phone No:</strong> 	+91-9437544200
+          </p>
+
+          <p className="mt-2 max-w-xl mx-auto px-4">
+            <strong>Email Id:</strong> 	ssdas8@gmail.com
+          </p>
+
+          <p className="mt-2 max-w-xl mx-auto px-4">
+            <strong>Date of Birth:</strong> 		22-09-1969
+          </p>
+
+          <p className="mt-2 max-w-xl mx-auto px-4">
+            <strong>Date of Joining	:</strong> 		01-04-2013
+          </p>
         </div>
       </div>
     </section>
@@ -69,6 +85,22 @@ const Faculty = () => {
           <p className="mt-2 max-w-xl mx-auto px-4">
             <strong>Specialization:</strong> 	Structural Engineering
           </p>
+
+          <p className="mt-2 max-w-xl mx-auto px-4">
+            <strong>Phone No:</strong> 	+91-9439502377
+          </p>
+
+          <p className="mt-2 max-w-xl mx-auto px-4">
+            <strong>Email Id:</strong> 		litusanjay@yahoo.com, skpatro_ce@vssut.ac.in
+          </p>
+
+          <p className="mt-2 max-w-xl mx-auto px-4">
+            <strong>Date of Birth:</strong> 			01-06-1974
+          </p>
+
+          <p className="mt-2 max-w-xl mx-auto px-4">
+            <strong>Date of Joining	:</strong> 			17-06-2015
+          </p> 
         </div>
       </div>
     </section>
@@ -105,6 +137,22 @@ const Faculty = () => {
 
           <p className="mt-2 max-w-xl mx-auto px-4">
             <strong>Specialization:</strong> 		Environmental Science and Engineering
+          </p>
+
+          <p className="mt-2 max-w-xl mx-auto px-4">
+            <strong>Phone No:</strong> 		+91-8280122184
+          </p>
+
+          <p className="mt-2 max-w-xl mx-auto px-4">
+            <strong>Email Id:</strong> 	rrdash_ce@vssut.ac.in
+          </p>
+
+          <p className="mt-2 max-w-xl mx-auto px-4">
+            <strong>Date of Birth:</strong> 			05-01-1979
+          </p>
+
+          <p className="mt-2 max-w-xl mx-auto px-4">
+            <strong>Date of Joining	:</strong> 		07-12-2012
           </p>
         </div>
       </div>
@@ -143,6 +191,22 @@ const Faculty = () => {
           <p className="mt-2 max-w-xl mx-auto px-4">
             <strong>Specialization:</strong> 		Structural Engineering
           </p>
+
+          <p className="mt-2 max-w-xl mx-auto px-4">
+            <strong>Phone No:</strong> 		+91-9437340061
+          </p>
+
+          <p className="mt-2 max-w-xl mx-auto px-4">
+            <strong>Email Id:</strong> 	rkpanigrahi_ce@vssut.ac.in
+          </p>
+
+          <p className="mt-2 max-w-xl mx-auto px-4">
+            <strong>Date of Birth:</strong> 			13-06-1966
+          </p>
+
+          <p className="mt-2 max-w-xl mx-auto px-4">
+            <strong>Date of Joining	:</strong> 			19-06-2015
+          </p>
         </div>
       </div>
     </section>
@@ -179,6 +243,22 @@ const Faculty = () => {
 
           <p className="mt-2 max-w-xl mx-auto px-4">
             <strong>Specialization:</strong> 		Water Resources Engineering
+          </p>
+
+          <p className="mt-2 max-w-xl mx-auto px-4">
+            <strong>Phone No:</strong> 		+91-9437177792
+          </p>
+
+          <p className="mt-2 max-w-xl mx-auto px-4">
+            <strong>Email Id:</strong> 		anilkarhy@gmail.com
+          </p>
+
+          <p className="mt-2 max-w-xl mx-auto px-4">
+            <strong>Date of Birth:</strong> 			04-05-1968
+          </p>
+
+          <p className="mt-2 max-w-xl mx-auto px-4">
+            <strong>Date of Joining	:</strong> 			29-12-2016
           </p>
         </div>
       </div>
@@ -217,6 +297,22 @@ const Faculty = () => {
           <p className="mt-2 max-w-xl mx-auto px-4">
             <strong>Specialization:</strong> 	Geotechnical Engineering
           </p>  
+
+          <p className="mt-2 max-w-xl mx-auto px-4">
+            <strong>Phone No:</strong> 	+91-9438791141
+          </p>
+
+          <p className="mt-2 max-w-xl mx-auto px-4">
+            <strong>Email Id:</strong> 		debagiri@gmail.com
+          </p>
+
+          <p className="mt-2 max-w-xl mx-auto px-4">
+            <strong>Date of Birth:</strong> 			15-06-1972
+          </p>
+
+          <p className="mt-2 max-w-xl mx-auto px-4">
+            <strong>Date of Joining	:</strong> 			26-06-2015
+          </p>
         </div>
       </div>
     </section>
@@ -256,6 +352,22 @@ const Faculty = () => {
           <p className="mt-2 max-w-xl mx-auto px-4">
             <strong>Specialization:</strong> 		Structural Engineering
           </p>
+
+          {/* <p className="mt-2 max-w-xl mx-auto px-4">
+            <strong>Phone No:</strong> 	+91-9437544200
+          </p> */}
+
+          <p className="mt-2 max-w-xl mx-auto px-4">
+            <strong>Email Id:</strong> 		skpanigrahi_ce@vssut.ac.in
+          </p>
+
+          <p className="mt-2 max-w-xl mx-auto px-4">
+            <strong>Date of Birth:</strong> 		21-05-1977
+          </p>
+
+          <p className="mt-2 max-w-xl mx-auto px-4">
+            <strong>Date of Joining	:</strong> 			24-01-2006
+          </p>
         </div>
       </div>
     </section>
@@ -292,6 +404,22 @@ const Faculty = () => {
 
           <p className="mt-2 max-w-xl mx-auto px-4">
             <strong>Specialization:</strong> 	Transportation Engineering
+          </p>
+
+          <p className="mt-2 max-w-xl mx-auto px-4">
+            <strong>Phone No:</strong> 		+91-9437556530
+          </p>
+
+          <p className="mt-2 max-w-xl mx-auto px-4">
+            <strong>Email Id:</strong> 		sudhira.rath1@gmail.com
+          </p>
+
+          <p className="mt-2 max-w-xl mx-auto px-4">
+            <strong>Date of Birth:</strong> 			01-06-1966
+          </p>
+
+          <p className="mt-2 max-w-xl mx-auto px-4">
+            <strong>Date of Joining	:</strong> 			01-07-1991
           </p>
         </div>
       </div>
@@ -330,6 +458,22 @@ const Faculty = () => {
           <p className="mt-2 max-w-xl mx-auto px-4">
             <strong>Specialization:</strong> 	Transportation Engineering
           </p>
+
+          <p className="mt-2 max-w-xl mx-auto px-4">
+            <strong>Phone No:</strong> 		+91-9439650140
+          </p>
+
+          <p className="mt-2 max-w-xl mx-auto px-4">
+            <strong>Email Id:</strong> 		jayanti.nitw@gmail.com
+          </p>
+
+          <p className="mt-2 max-w-xl mx-auto px-4">
+            <strong>Date of Birth:</strong> 			18-08-2011
+          </p>
+
+          {/* <p className="mt-2 max-w-xl mx-auto px-4">
+            <strong>Date of Joining	:</strong> 		01-04-2013
+          </p> */}
         </div>
       </div>
     </section>
@@ -366,6 +510,22 @@ const Faculty = () => {
 
           <p className="mt-2 max-w-xl mx-auto px-4">
             <strong>Specialization:</strong> 		Structural Engineering
+          </p>
+
+          <p className="mt-2 max-w-xl mx-auto px-4">
+            <strong>Phone No:</strong> 	+91-9437439330
+          </p>
+
+          <p className="mt-2 max-w-xl mx-auto px-4">
+            <strong>Email Id:</strong> 		Sinha.leena@gmail.com
+          </p>
+
+          <p className="mt-2 max-w-xl mx-auto px-4">
+            <strong>Date of Birth:</strong> 		28-06-1982
+          </p>
+
+          <p className="mt-2 max-w-xl mx-auto px-4">
+            <strong>Date of Joining	:</strong> 		20-12-2012
           </p>
         </div>
       </div>
@@ -405,6 +565,22 @@ const Faculty = () => {
           <p className="mt-2 max-w-xl mx-auto px-4">
             <strong>Specialization:</strong> 	Structural Engineering
           </p>
+
+          <p className="mt-2 max-w-xl mx-auto px-4">
+            <strong>Phone No:</strong> 		+91-9438424831
+          </p>
+
+          <p className="mt-2 max-w-xl mx-auto px-4">
+            <strong>Email Id:</strong> 	parsuram18@gmail.com
+          </p>
+
+          <p className="mt-2 max-w-xl mx-auto px-4">
+            <strong>Date of Birth:</strong> 			22-06-1983
+          </p>
+
+          <p className="mt-2 max-w-xl mx-auto px-4">
+            <strong>Date of Joining	:</strong> 			03-04-2013
+          </p>
         </div>
       </div>
     </section>
@@ -442,6 +618,22 @@ const Faculty = () => {
           <p className="mt-2 max-w-xl mx-auto px-4">
             <strong>Specialization:</strong> 	Geotechnical Engineering
           </p>  
+
+          <p className="mt-2 max-w-xl mx-auto px-4">
+            <strong>Phone No:</strong> 		8895149794
+          </p>
+
+          <p className="mt-2 max-w-xl mx-auto px-4">
+            <strong>Email Id:</strong> 		robinsahu1@gmail.com
+          </p>
+
+          <p className="mt-2 max-w-xl mx-auto px-4">
+            <strong>Date of Birth:</strong> 		16-06-1986
+          </p>
+
+          <p className="mt-2 max-w-xl mx-auto px-4">
+            <strong>Date of Joining	:</strong> 		31-05-2014
+          </p>
         </div>
       </div>
     </section>
@@ -479,6 +671,22 @@ const Faculty = () => {
           <p className="mt-2 max-w-xl mx-auto px-4">
             <strong>Specialization:</strong> 	Water Resources Engineering
           </p>
+
+          <p className="mt-2 max-w-xl mx-auto px-4">
+            <strong>Phone No:</strong> 	+91-9437206485
+          </p>
+
+          <p className="mt-2 max-w-xl mx-auto px-4">
+            <strong>Email Id:</strong> 	janhabimeher@gmail.com
+          </p>
+
+          <p className="mt-2 max-w-xl mx-auto px-4">
+            <strong>Date of Birth:</strong> 		30-06-1983
+          </p>
+
+          <p className="mt-2 max-w-xl mx-auto px-4">
+            <strong>Date of Joining	:</strong> 			21-06-2014
+          </p>
         </div>
       </div>
     </section>
@@ -515,6 +723,22 @@ const Faculty = () => {
           <p className="mt-2 max-w-xl mx-auto px-4">
             <strong>Specialization:</strong> 		Water Resources Engineering
           </p>
+
+          <p className="mt-2 max-w-xl mx-auto px-4">
+            <strong>Phone No:</strong> 		9861292242
+          </p>
+
+          <p className="mt-2 max-w-xl mx-auto px-4">
+            <strong>Email Id:</strong> 	kajal.laxmi16@gmail.com
+          </p>
+
+          <p className="mt-2 max-w-xl mx-auto px-4">
+            <strong>Date of Birth:</strong> 		18-06-2014
+          </p>
+
+          {/* <p className="mt-2 max-w-xl mx-auto px-4">
+            <strong>Date of Joining	:</strong> 		01-04-2013
+          </p> */}
         </div>
       </div>
     </section>
@@ -552,6 +776,22 @@ const Faculty = () => {
           <p className="mt-2 max-w-xl mx-auto px-4">
             <strong>Specialization:</strong> 		Geotechnical Engineering
           </p>
+
+          <p className="mt-2 max-w-xl mx-auto px-4">
+            <strong>Phone No:</strong> 		+91-663-2430591
+          </p>
+
+          <p className="mt-2 max-w-xl mx-auto px-4">
+            <strong>Email Id:</strong> 		rupashreesec@gmail.com
+          </p>
+
+          <p className="mt-2 max-w-xl mx-auto px-4">
+            <strong>Date of Birth:</strong> 		23-06-2014
+          </p>
+
+          {/* <p className="mt-2 max-w-xl mx-auto px-4">
+            <strong>Date of Joining	:</strong> 		01-04-2013
+          </p> */}
         </div>
       </div>
     </section>
@@ -588,6 +828,22 @@ const Faculty = () => {
 
           <p className="mt-2 max-w-xl mx-auto px-4">
             <strong>Specialization:</strong> 	Transportation Engineering
+          </p>
+
+          <p className="mt-2 max-w-xl mx-auto px-4">
+            <strong>Phone No:</strong> +91-9437767331
+          </p>
+
+          <p className="mt-2 max-w-xl mx-auto px-4">
+            <strong>Email Id:</strong> 	aknaik_ce@vssut.ac.in
+          </p>
+
+          <p className="mt-2 max-w-xl mx-auto px-4">
+            <strong>Date of Birth:</strong> 			06-09-1990
+          </p>
+
+          <p className="mt-2 max-w-xl mx-auto px-4">
+            <strong>Date of Joining	:</strong> 			18-06-2015
           </p>
         </div>
       </div>
@@ -626,6 +882,22 @@ const Faculty = () => {
           <p className="mt-2 max-w-xl mx-auto px-4">
             <strong>Specialization:</strong> 		Structural Engineering
           </p>
+
+          <p className="mt-2 max-w-xl mx-auto px-4">
+            <strong>Phone No:</strong> 		+91-8763413397
+          </p>
+
+          <p className="mt-2 max-w-xl mx-auto px-4">
+            <strong>Email Id:</strong> 	Sanghamitrajena1987@gmail.com
+          </p>
+
+          <p className="mt-2 max-w-xl mx-auto px-4">
+            <strong>Date of Birth:</strong> 			05-03-1987
+          </p>
+
+          <p className="mt-2 max-w-xl mx-auto px-4">
+            <strong>Date of Joining	:</strong> 			22-05-2015
+          </p>
         </div>
       </div>
     </section>
@@ -662,6 +934,22 @@ const Faculty = () => {
 
           <p className="mt-2 max-w-xl mx-auto px-4">
             <strong>Specialization:</strong> 	Transportation Engineering
+          </p>
+
+          <p className="mt-2 max-w-xl mx-auto px-4">
+            <strong>Phone No:</strong> 	+91-9692748066
+          </p>
+
+          <p className="mt-2 max-w-xl mx-auto px-4">
+            <strong>Email Id:</strong> 	jhunaojha@gmail.com
+          </p>
+
+          <p className="mt-2 max-w-xl mx-auto px-4">
+            <strong>Date of Birth:</strong> 			07-07-1984
+          </p>
+
+          <p className="mt-2 max-w-xl mx-auto px-4">
+            <strong>Date of Joining	:</strong> 		18-06-2015
           </p>
         </div>
       </div>
@@ -701,6 +989,22 @@ const Faculty = () => {
           <p className="mt-2 max-w-xl mx-auto px-4">
             <strong>Specialization:</strong> 		Structural Engineering
           </p>
+
+          <p className="mt-2 max-w-xl mx-auto px-4">
+            <strong>Phone No:</strong> 		+91-9434314246
+          </p>
+
+          <p className="mt-2 max-w-xl mx-auto px-4">
+            <strong>Email Id:</strong> 		rdandapat@gmail.com
+          </p>
+
+          <p className="mt-2 max-w-xl mx-auto px-4">
+            <strong>Date of Birth:</strong> 		23-03-1985
+          </p>
+
+          <p className="mt-2 max-w-xl mx-auto px-4">
+            <strong>Date of Joining	:</strong> 		01-11-2016
+          </p>
         </div>
       </div>
     </section>
@@ -738,6 +1042,22 @@ const Faculty = () => {
 
           <p className="mt-2 max-w-xl mx-auto px-4">
             <strong>Specialization:</strong> 		Structural Engineering
+          </p>
+
+          <p className="mt-2 max-w-xl mx-auto px-4">
+            <strong>Phone No:</strong> 	+91-9438635880
+          </p>
+
+          <p className="mt-2 max-w-xl mx-auto px-4">
+            <strong>Email Id:</strong> 		pratapkumarpradhan88@gmail.com
+          </p>
+
+          <p className="mt-2 max-w-xl mx-auto px-4">
+            <strong>Date of Birth:</strong> 		29-05-1988
+          </p>
+
+          <p className="mt-2 max-w-xl mx-auto px-4">
+            <strong>Date of Joining	:</strong> 			17-11-2016
           </p>
         </div>
       </div>
@@ -777,6 +1097,22 @@ const Faculty = () => {
           <p className="mt-2 max-w-xl mx-auto px-4">
             <strong>Specialization:</strong> Geotechnical Engg.
           </p>
+
+          <p className="mt-2 max-w-xl mx-auto px-4">
+            <strong>Phone No:</strong> 	+91-9437907747
+          </p>
+
+          <p className="mt-2 max-w-xl mx-auto px-4">
+            <strong>Email Id:</strong> 	kajal.swain23@gmail.com
+          </p>
+
+          <p className="mt-2 max-w-xl mx-auto px-4">
+            <strong>Date of Birth:</strong> 			08-05-1991
+          </p>
+
+          <p className="mt-2 max-w-xl mx-auto px-4">
+            <strong>Date of Joining	:</strong> 			04-09-2017
+          </p>
         </div>
       </div>
     </section>
@@ -814,6 +1150,22 @@ const Faculty = () => {
 
           <p className="mt-2 max-w-xl mx-auto px-4">
             <strong>Specialization:</strong> 		Water Resources Engineering
+          </p>
+
+          <p className="mt-2 max-w-xl mx-auto px-4">
+            <strong>Phone No:</strong> 	+91-9776384711
+          </p>
+
+          <p className="mt-2 max-w-xl mx-auto px-4">
+            <strong>Email Id:</strong> 	kirtisutabhoi@gmail.com
+          </p>
+
+          <p className="mt-2 max-w-xl mx-auto px-4">
+            <strong>Date of Birth:</strong> 			01-07-1990
+          </p>
+
+          <p className="mt-2 max-w-xl mx-auto px-4">
+            <strong>Date of Joining	:</strong> 			05-09-2017
           </p>
         </div>
       </div>
@@ -853,6 +1205,22 @@ const Faculty = () => {
           <p className="mt-2 max-w-xl mx-auto px-4">
             <strong>Specialization:</strong> 	Transportation Engineering
           </p>
+
+          <p className="mt-2 max-w-xl mx-auto px-4">
+            <strong>Phone No:</strong> 		+91-9090266000
+          </p>
+
+          <p className="mt-2 max-w-xl mx-auto px-4">
+            <strong>Email Id:</strong> 	sksial_ce@vssut.ac.in
+          </p>
+
+          <p className="mt-2 max-w-xl mx-auto px-4">
+            <strong>Date of Birth:</strong> 			15-06-1990
+          </p>
+
+          <p className="mt-2 max-w-xl mx-auto px-4">
+            <strong>Date of Joining	:</strong> 		04-09-2017
+          </p>
         </div>
       </div>
     </section>
@@ -890,6 +1258,22 @@ const Faculty = () => {
 
           <p className="mt-2 max-w-xl mx-auto px-4">
             <strong>Specialization:</strong> 		Water Resource Engineering
+          </p>
+
+          <p className="mt-2 max-w-xl mx-auto px-4">
+            <strong>Phone No:</strong> 		+91-8763239659
+          </p>
+
+          <p className="mt-2 max-w-xl mx-auto px-4">
+            <strong>Email Id:</strong> 		abhayaa.nayak91@gmail.com
+          </p>
+
+          <p className="mt-2 max-w-xl mx-auto px-4">
+            <strong>Date of Birth:</strong> 		09-03-1991
+          </p>
+
+          <p className="mt-2 max-w-xl mx-auto px-4">
+            <strong>Date of Joining	:</strong> 		09-09-2017
           </p>
         </div>
       </div>
