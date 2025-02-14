@@ -1,0 +1,291 @@
+const Faculties=[
+  {
+    role: "HEAD OF DEPARTMENT",
+    name: "Prof. Sudhanshu Sekhar Das",
+    designation: "Professor",
+    qualification: "B.Sc Engg. (Civil), (OUAT), M.T.R.P. (IIEST Shibpur), PhD (IIT Kharagpur)",
+    specialization: "Transportation Engineering",
+    phone_no: "+91-9437544200",
+    email: ["ssdas8@gmail.com"],
+    date_of_birth: "22-09-1969",
+    date_of_joining: "01-04-2013",
+    image_url: "https://www.vssut.ac.in/faculty/sudhanshu-sekhar-das_photo1449813234.jpg"
+  },
+  {
+      role: "HEAD OF DEPARTMENT",
+      name: "Prof. Sanjaya Kumar Patro",
+      designation: "Professor",
+      qualification: "PhD (IIT Bombay)",
+      specialization: "Structural Engineering",
+      phone_no: "+91-9439502377",
+      email: ["litusanjay@yahoo.com", "skpatro_ce@vssut.ac.in"],
+      date_of_birth: "01-06-1974",
+      date_of_joining: "17-06-2015",
+      image_url: "https://www.vssut.ac.in/faculty/sanjaya-kumar-patro_photo1449815243.jpg"
+    },
+      {
+        role: "HEAD OF DEPARTMENT",
+        name: "Prof. Rakesh Roshan Dash",
+        designation: "Professor",
+        qualification: "Ph.D. (IIT Roorkee), M. Tech. (IIT Delhi), B.E. (Utkal Univ.)",
+        specialization: "Environmental Science and Engineering",
+        phone_no: "+91-8280122184",
+        email: ["rrdash_ce@vssut.ac.in"],
+        date_of_birth: "05-01-1979",
+        date_of_joining: "07-12-2012",
+        image_url: "https://www.vssut.ac.in/faculty/rakesh-roshan-dash_photo1719643640.jpg"
+      },
+      {
+        role: "HEAD OF DEPARTMENT",
+        name: "Prof. Ramakanta Panigrahi",
+        designation: "Professor",
+        qualification: "B.Sc (UCE Burla), M Tech (IIT Delhi), PhD (IIT Delhi)",
+        specialization: "Structural Engineering",
+        phone_no: "+91-9437340061",
+        email: ["rkpanigrahi_ce@vssut.ac.in"],
+        date_of_birth: "13-06-1966",
+        date_of_joining: "19-06-2015",
+        image_url: "https://www.vssut.ac.in/faculty/ramakanta-panigrahi_photo1449723745.jpg"
+      },
+      {
+        role: "HEAD OF DEPARTMENT",
+        name: "Prof. Anil Kumar Kar",
+        designation: "Professor",
+        qualification: "B.Sc. (Engg) (S.U), M.Tech (IIT Roorkee), Ph.D (IIT Roorkee)",
+        specialization: "Water Resources Engineering",
+        phone_no: "+91-9437177792",
+        email: ["anilkarhy@gmail.com"],
+        date_of_birth: "04-05-1968",
+        date_of_joining: "29-12-2016",
+        image_url: "https://www.vssut.ac.in/faculty/anil-kumar-kar_photo1487783211.jpg"
+      },
+      {
+        role: "ASSOCIATE PROFESSOR",
+        name: "Dr. Debabrata Giri",
+        designation: "Associate Professor",
+        qualification: "B.TECH (CET, BBSR), M.TECH (NIT, RKL), Ph.D (IIT, KGP)",
+        specialization: "Geotechnical Engineering",
+        phone_no: "+91-9438791141",
+        email: ["debagiri@gmail.com"],
+        date_of_birth: "15-06-1972",
+        date_of_joining: "26-06-2015",
+        image_url: "https://www.vssut.ac.in/faculty/debabrata-giri_photo1688963757.jpg"
+      },
+      {
+        role: "ASSOCIATE PROFESSOR",
+        name: "Dr. Saubhagya Kumar Panigrahi",
+        designation: "Associate Professor",
+        qualification: "B. Tech. (Civil Engineering, Utkal University), M. Tech. (Structural Engineering, NIT Rourkela), Ph.D. (Civil Engineering, IIT Kharagpur)",
+        specialization: "Structural Engineering",
+        phone_no: "", // Phone number is not provided
+        email: ["skpanigrahi_ce@vssut.ac.in"],
+        date_of_birth: "21-05-1977",
+        date_of_joining: "24-01-2006",
+        image_url: "https://www.vssut.ac.in/faculty/saubhagya-kumar-panigrahi_photo1608296789.jpg"
+      },
+      {
+        role: "ASSISTANT PROFESSOR",
+        name: "Ms. Sudhira Rath",
+        designation: "Assistant Professor",
+        qualification: "M.Sc(Engg) (N.I.T,RKL), M.E (T.E) (S.U)",
+        specialization: "Transportation Engineering",
+        phone_no: "+91-9437556530",
+        email: ["sudhira.rath1@gmail.com"],
+        date_of_birth: "01-06-1966",
+        date_of_joining: "01-07-1991",
+        image_url: "https://www.vssut.ac.in/faculty/sudhira-rath_photo1449812371.jpg"
+      },
+      {
+        role: "ASSISTANT PROFESSOR",
+        name: "Ms. Jayanti Munda",
+        designation: "Assistant Professor",
+        qualification: "B.Tech (UCE, Burla ), M.Tech (NIT Warangal)",
+        specialization: "Transportation Engineering",
+        phone_no: "+91-9439650140",
+        email: ["jayanti.nitw@gmail.com"],
+        date_of_birth: "18-08-2011", // Verify if the date of birth is correct.
+        date_of_joining: "", // Date of joining was not provided
+        image_url: "https://www.vssut.ac.in/faculty/jayanti-munda.jpg"
+      },
+      {
+        role: "ASSISTANT PROFESSOR",
+        name: "Dr. Leena Sinha",
+        designation: "Assistant Professor",
+        qualification: "B.Tech ( UCE BURLA ), M.Tech( NIT ROURKELA), Ph.D (VSSUT BURLA)",
+        specialization: "Structural Engineering",
+        phone_no: "+91-9437439330",
+        email: ["Sinha.leena@gmail.com"],
+        date_of_birth: "28-06-1982",
+        date_of_joining: "20-12-2012",
+        image_url: "https://www.vssut.ac.in/faculty/leena-sinha1413637221.jpg"
+      },
+      {
+        role: "ASSISTANT PROFESSOR",
+        name: "Dr. Parsuram Nayak",
+        designation: "Assistant Professor",
+        qualification: "B-Tech (UCE Burla), M. Tech (NIT Rourkela), Ph.D (IIT, Kharagpur)",
+        specialization: "Structural Engineering",
+        phone_no: "+91-9438424831",
+        email: ["parsuram18@gmail.com"],
+        date_of_birth: "22-06-1983",
+        date_of_joining: "03-04-2013",
+        image_url: "https://www.vssut.ac.in/faculty/parsuram-nayak.jpg"
+      },
+      {
+        role: "ASSISTANT PROFESSOR",
+        name: "Dr. Rajiv Lochan Sahu",
+        designation: "Assistant Professor",
+        qualification: "B. Tech. (VIT University, Vellore), M. Tech (NIT Rourkela), Ph.D (VSSUT, Burla)",
+        specialization: "Geotechnical Engineering",
+        phone_no: "+91-8895149794",
+        email: ["robinsahu1@gmail.com"],
+        date_of_birth: "16-06-1986",
+        date_of_joining: "31-05-2014",
+        image_url: "https://www.vssut.ac.in/faculty/rajiv-lochan-sahu_photo1676872122.jpg"
+      },
+      {
+        role: "ASSISTANT PROFESSOR",
+        name: "Ms. Janhabi Meher",
+        designation: "Assistant Professor",
+        qualification: "B.Tech ( UCE BURLA ), M.Tech (IIT Kanpur), Ph.D (NIT Rourkela)",
+        specialization: "Water Resources Engineering",
+        phone_no: "+91-9437206485",
+        email: ["janhabimeher@gmail.com"],
+        date_of_birth: "30-06-1983",
+        date_of_joining: "21-06-2014",
+        image_url: "https://www.vssut.ac.in/faculty/janhabi-meher1413636328.jpg"
+      },
+      {
+        role: "ASSISTANT PROFESSOR",
+        name: "Dr. Laxmipriya Mohanty",
+        designation: "Assistant Professor",
+        qualification: "Ph.D",
+        specialization: "Water Resources Engineering",
+        phone_no: "9861292242",
+        email: ["kajal.laxmi16@gmail.com"],
+        date_of_birth: "18-06-2014",
+        image_url: "https://www.vssut.ac.in/faculty/laxmipriya-mohanty1413637671.jpg"
+      },
+      {
+        role: "ASSISTANT PROFESSOR",
+        name: "Ms. Rupashree Ragini Sahoo",
+        designation: "Assistant Professor",
+        qualification: "M. Tech from NIT Rourkela",
+        specialization: "Geotechnical Engineering",
+        phone_no: "+91-663-2430591",
+        email: ["rupashreesec@gmail.com"],
+        date_of_birth: "23-06-2014",
+        image_url: "https://www.vssut.ac.in/faculty/rupashree-ragini-sahoo1413636602.jpg"
+      },
+      {
+        role: "ASSISTANT PROFESSOR",
+        name: "Mr. Akash Kumar Naik",
+        designation: "Assistant Professor",
+        qualification: "B.Tech (VSSUT Burla), M.Tech (IIT Kharagpur)",
+        specialization: "Transportation Engineering",
+        phone_no: "+91-9437767331",
+        email: ["aknaik_ce@vssut.ac.in"],
+        date_of_birth: "06-09-1990",
+        date_of_joining: "18-06-2015",
+        image_url: "https://www.vssut.ac.in/faculty/akash-kumar-naik_photo1689174206.jpg"
+      },
+      {
+        role: "ASSISTANT PROFESSOR",
+        name: "Dr. Sanghamitra Jena",
+        designation: "Assistant Professor",
+        qualification: "B.Tech (2009, OEC,BBSR), M. Tech(2011, CET,BBSR), Ph.D (2020, VSSUT, BURLA)",
+        specialization: "Structural Engineering",
+        phone_no: "+91-8763413397",
+        email: ["Sanghamitrajena1987@gmail.com"],
+        date_of_birth: "05-03-1987",
+        date_of_joining: "22-05-2015",
+        image_url: "https://www.vssut.ac.in/faculty/sanghamitra-jena_photo1449722305.jpg"
+      },
+      {
+        role: "ASSISTANT PROFESSOR",
+        name: "Ms. Jhunarani Ojha",
+        designation: "Assistant Professor",
+        qualification: "B. Tech., M. Tech (NIT, Rourkela)",
+        specialization: "Transportation Engineering",
+        phone_no: "+91-9692748066",
+        email: ["jhunaojha@gmail.com"],
+        date_of_birth: "07-07-1984",
+        date_of_joining: "18-06-2015",
+        image_url: "https://www.vssut.ac.in/faculty/jhunarani-ojha_photo1449723708.jpg"
+      },
+      {
+        role: "ASSISTANT PROFESSOR",
+        name: "Dr. Ramkrishna Dandapat",
+        designation: "Assistant Professor",
+        qualification: "Ph.D. (IIT Kharagpur), M. Tech. (IIT Kharagpur), B.E. (Bengal Engineering and Science University, Shibpur)",
+        specialization: "Structural Engineering",
+        phone_no: "+91-9434314246",
+        email: ["rdandapat@gmail.com"],
+        date_of_birth: "23-03-1985",
+        date_of_joining: "01-11-2016",
+        image_url: "https://www.vssut.ac.in/faculty/ramkrishna-dandapat_photo1480014219.jpg"
+      },
+      {
+        role: "ASSISTANT PROFESSOR",
+        name: "Mr. Ajaya Kumar Das",
+        designation: "Assistant Professor",
+        qualification: "B.Tech (C.E.T Bhubaneswar), M.Tech in Structural Engineering, IIT DELHI",
+        specialization: "Structural Engineering",
+        phone_no: "+91-9438635880",
+        email: ["pratapkumarpradhan88@gmail.com"],
+        date_of_birth: "29-05-1988",
+        date_of_joining: "17-11-2016",
+        image_url: "https://www.vssut.ac.in/faculty/ajaya-kumar-das_photo1630371946.jpg"
+      },
+      {
+        role: "ASSISTANT PROFESSOR",
+        name: "Ms. Kajal Swain",
+        designation: "Assistant Professor",
+        qualification: "B.Tech, ITER (SOA University), Bhubaneswar, M.Tech. NIT, Rourkela",
+        specialization: "Geotechnical Engg.",
+        phone_no: "+91-9437907747",
+        email: ["kajal.swain23@gmail.com"],
+        date_of_birth: "08-05-1991",
+        date_of_joining: "04-09-2017",
+        image_url: "https://www.vssut.ac.in/faculty/kajal-swain_photo1509751496.jpg"
+      },
+      {
+        role: "ASSISTANT PROFESSOR",
+        name: "Ms. Kirtisuta Bhoi",
+        designation: "Assistant Professor",
+        qualification: "B.Tech (VSSUT, Burla), M.Tech(VSSUT, Burla)",
+        specialization: "Water Resources Engineering",
+        phone_no: "+91-9776384711",
+        email: ["kirtisutabhoi@gmail.com"],
+        date_of_birth: "01-07-1990",
+        date_of_joining: "05-09-2017",
+        image_url: "https://www.vssut.ac.in/faculty/kirtisuta-bhoi_photo1509749572.jpg"
+      },
+      {
+        role: "ASSISTANT PROFESSOR",
+        name: "Mr. Sushant Kumar Sial",
+        designation: "Assistant Professor",
+        qualification: "M.Tech (IIT Kharagpur), B.Tech (VSSUT, Burla)",
+        specialization: "Transportation Engineering",
+        phone_no: "+91-9090266000",
+        email: ["sksial_ce@vssut.ac.in"],
+        date_of_birth: "15-06-1990",
+        date_of_joining: "04-09-2017",
+        image_url: "https://www.vssut.ac.in/faculty/sushant-kumar-sial_photo1509750438.jpg"
+      },
+      {
+        role: "ASSISTANT PROFESSOR",
+        name: "Ms. Abhayaa Nayak",
+        designation: "Assistant Professor",
+        qualification: "B.Tech (IACR, Rayagada), M.Tech (V.S.S.U.T Burla)",
+        specialization: "Water Resource Engineering",
+        phone_no: "+91-8763239659",
+        email: ["abhayaa.nayak91@gmail.com"],
+        date_of_birth: "09-03-1991",
+        date_of_joining: "09-09-2017",
+        image_url: "https://www.vssut.ac.in/faculty/abhayaa-nayak_photo1509750900.jpg"
+      }
+    
+]
+
+export default Faculties;
