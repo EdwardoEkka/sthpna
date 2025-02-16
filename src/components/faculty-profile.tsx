@@ -9,12 +9,14 @@ const FacultyProfile: React.FC<FacultyProfileProps> = ( {faculty} ) => {
   return (
     <section className="flex justify-center items-center py-10 bg-gray-900">
       <div className="max-w-4xl w-full bg-white p-8 rounded-lg shadow-lg">
-        <div className="flex flex-col sm:flex-row sm:items-center sm:gap-6">
-          <img
-            src={faculty.image_url}
-            alt={faculty.name}
-            className="w-32 h-32 rounded-full border-2 border-black shadow-lg mx-auto sm:mx-0"
-          />
+        <div className="flex flex-col sm:flex-row sm:items-center sm:gap-6 ">
+          <div className='transition-transform duration-300 ease-in-out hover:scale-110'>
+             <img
+              src={faculty.image_url}
+              alt={faculty.name}
+              className="w-32 h-32 rounded-full border-2 border-black shadow-lg mx-auto sm:mx-0" 
+             />
+          </div>
           <div className="text-center sm:text-left mt-4 sm:mt-0">
             <h2 className="text-2xl font-bold text-gray-800">{faculty.name}</h2>
             <p className="text-lg text-gray-600">{faculty.designation}</p>

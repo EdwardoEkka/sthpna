@@ -7,7 +7,7 @@ function Home() {
 
       {/* Hero Section */}
       <section className="pt-20 pb-32 relative">
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1590596504144-f08686ef0be7?auto=format&fit=crop&q=80')] bg-cover bg-center">
+        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1590596504144-f08686ef0be7?auto=format&fit=crop&q=80')] bg-cover bg-center ">
           <div className="absolute inset-0 bg-black/70"></div>
         </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative pt-20">
