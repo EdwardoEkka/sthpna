@@ -9,3 +9,9 @@ export type Faculty = {
     date_of_joining: string;
     image_url: string;
   };
+
+export type Coordinator = {
+  img_url: string;
+  name: string;
+  position: string;
+}

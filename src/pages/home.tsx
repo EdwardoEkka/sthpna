@@ -1,5 +1,6 @@
 import { Building2, Users, Calendar, Trophy } from "lucide-react";
 import HomeCarousel from "../components/home-carousel";
+import CoordinatorsList from "../components/coordinators";
 
 function Home() {
   return (
@@ -124,6 +125,10 @@ function Home() {
             </div>
           </div>
         </div>
+      </section>
+
+      <section className="py-20 bg-black/50">
+      <CoordinatorsList/>
       </section>
 
       {/* Features Section */}
