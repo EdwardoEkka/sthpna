@@ -10,6 +10,11 @@ const Coordinators = [
         position: "Branch Secretary"
     },
     {
+        img_url: "./imgs/ayush.jpg",
+        name: "Ayush Mishra",
+        position: "Technical Coordinator"
+    },
+    {
         img_url: "./imgs/swayanshu.jpg",
         name: "Swayanshu Behera",
         position: "Student Academic Coordinator"
@@ -24,11 +29,7 @@ const Coordinators = [
         name: "Harshita Sahu",
         position:"Cultural Coordinator"
     },
-    {
-        img_url: "./imgs/ayush.jpg",
-        name: "Ayush Bhadwa",
-        position: "Gandu Technical Coordinator"
-    },
+    
    
 ]    
     
