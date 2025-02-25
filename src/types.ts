@@ -15,3 +15,10 @@ export type Coordinator = {
   name: string;
   position: string;
 }
+
+export type Events = {
+  img: string;
+  name: string;
+  btn: string;
+  rules: string[];
+}
