@@ -1,7 +1,7 @@
 const Event = [
     {
         img: "https://easydrawingart.com/wp-content/uploads/2019/08/How-to-draw-a-cartoon-character-1.jpg",
-        name: "Cal Clash",
+        name: "Cad-Clash",
         btn: "https://www.youtube.com/",
         rules: ["rule-1",'rule-2',]
     },
@@ -25,31 +25,31 @@ const Event = [
     },
     {
         img: "https://easydrawingart.com/wp-content/uploads/2019/08/How-to-draw-a-cartoon-character-1.jpg",
-        name: "Puzzle Quest",
+        name: "Puzzle-Quest",
         btn: "Register",
         rules: ["rule-1",'rule-2',]
     },
     {
         img: "https://easydrawingart.com/wp-content/uploads/2019/08/How-to-draw-a-cartoon-character-1.jpg",
-        name: "Rapid Render",
+        name: "Rapid-Render",
         btn: "Register",
         rules: ["rule-1",'rule-2',]
     },
     {
         img: "https://easydrawingart.com/wp-content/uploads/2019/08/How-to-draw-a-cartoon-character-1.jpg",
-        name: "Sketch Surfe",
+        name: "Sketch-Surge",
         btn: "Register",
         rules: ["rule-1",'rule-2',]
     },
     {
         img: "https://easydrawingart.com/wp-content/uploads/2019/08/How-to-draw-a-cartoon-character-1.jpg",
-        name: "Civil Talk",
+        name: "Civil-Talk",
         btn: "Register",
         rules: ["rule-1",'rule-2',]
     },
     {
         img: "https://easydrawingart.com/wp-content/uploads/2019/08/How-to-draw-a-cartoon-character-1.jpg",
-        name: "Street Scape",
+        name: "Street-Scape",
         btn: "Register",
         rules: ["rule-1",'rule-2',]
     },

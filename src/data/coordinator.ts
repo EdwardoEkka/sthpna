@@ -6,7 +6,7 @@ const Coordinators = [
     },
     {
         img_url: "./imgs/pratushi.jpg",
-        name: "Pratyushi",
+        name: "Pratyushi Mohapatra",
         position: "Branch Secretary"
     },
     {
