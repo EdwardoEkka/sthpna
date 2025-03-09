@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import EventList from '../components/events';
+import ProfileCard from '../components/developer';
 
 const TypingText = ({ text }: { text: string }) => {
   const [displayText, setDisplayText] = useState('');
@@ -58,6 +59,9 @@ const Stapna = () => {
             STHAPNA
           </h1>
 
+          {/* <img src="./imgs/sthapna.png" alt="" className="h-[1000px] w-auto" /> */}
+
+
           {/* Continuous Typing Animation */}
           <TypingText text="Where Tradition Meets Technology" />
         </motion.div>
@@ -73,6 +77,8 @@ const Stapna = () => {
           <EventList />
         </motion.div>
       </section>
+
+      
     </div>
   );
 };

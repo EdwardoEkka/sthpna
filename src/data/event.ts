@@ -24,7 +24,7 @@ const Event = [
         rules: ["rule-1",'rule-2',]
     },
     {
-        img: "https://easydrawingart.com/wp-content/uploads/2019/08/How-to-draw-a-cartoon-character-1.jpg",
+        img: "./imgs/Maze-hunt.jpg",
         name: "Puzzle-Quest",
         btn: "Register",
         rules: ["rule-1",'rule-2',]

@@ -1,6 +1,7 @@
 import { Building2, Users, Calendar, Trophy } from "lucide-react";
 import HomeCarousel from "../components/home-carousel";
 import CoordinatorsList from "../components/coordinators";
+import ProfileCard from '../components/developer';
 
 function Home() {
   return (
@@ -127,9 +128,23 @@ function Home() {
         </div>
       </section>
 
-      <section className="py-20 bg-black/50">
+      <section className="py-10 bg-black mb-[-250px]">
       <CoordinatorsList/>
       </section>
+
+      <section className="bg-black flex flex-col justify-center items-center h-screen ">
+  {/* 🔹 Heading */}
+  <h1 className="text-3xl font-bold text-white mb-8 ">Developer & Designer</h1>
+
+  {/* 🔹 Profile Cards Wrapper */}
+  <div className="flex flex-wrap justify-center items-center gap-[500px] w-full max-w-screen-lg mb-[-250px]  sm: ml-[10px] ">
+    <ProfileCard />  
+</div>
+</section>
+
+
+
+
 
       {/* Features Section */}
       <section className="py-20 bg-black/50">
@@ -158,6 +173,8 @@ function Home() {
           </div>
         </div>
       </section>
+
+     
 
 
 

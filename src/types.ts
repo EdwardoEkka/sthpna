@@ -14,6 +14,9 @@ export type Coordinator = {
   img_url: string;
   name: string;
   position: string;
+  insta: string;
+  linkdin: string;
+  email: string;
 }
 
 export type Events = {
@@ -21,4 +24,13 @@ export type Events = {
   name: string;
   btn: string;
   rules: string[];
+}
+
+export type Developer = {
+  img: string;
+  name: string;
+  position: string;
+  insta: string;
+  linkdin: string;
+  email: string;
 }

@@ -1,37 +1,73 @@
-import React from 'react'
-import { Coordinator } from '../types'
-import Coordinators from '../data/coordinator'
+import React from "react";
+import { motion } from "framer-motion";
+import { FaInstagram, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import { Coordinator } from "../types";
+import Coordinators from "../data/coordinator";
 
 type CoordinatorProps = {
-    coordinator: Coordinator;
-}
+  coordinator: Coordinator;
+};
 
 const CoordinatorCard = ({ coordinator }: CoordinatorProps) => {
-    return (
-      <div className="bg-white shadow-lg rounded-2xl overflow-hidden p-4 flex flex-col items-center text-center">
-        <img
-          src={coordinator.img_url}
-          alt={coordinator.name}
-          className="w-24 h-24 object-cover rounded-full mb-4 border-2 border-gray-300"
-        />
-        <h3 className="text-xl font-semibold text-black">{coordinator.name}</h3>
-        <p className="text-lg text-black">{coordinator.position}</p>
+  return (
+    <motion.div
+      whileHover={{ scale: 1.05 }} // Subtle hover effect
+      transition={{ type: "spring", stiffness: 200, damping: 10 }}
+      className="relative bg-white p-6 rounded-2xl shadow-lg border border-gray-300
+                 w-full max-w-xs flex flex-col items-center text-center text-gray-900
+                 hover:shadow-2xl transition-shadow duration-300"
+    >
+      {/* Profile Image */}
+      <img
+        src={coordinator.img_url}
+        alt={coordinator.name}
+        className="w-24 h-24 object-cover rounded-full border-4 border-red-500 shadow-md"
+      />
 
+      {/* Name & Role */}
+      <h3 className="mt-4 text-lg sm:text-xl font-bold tracking-wide">{coordinator.name}</h3>
+      <p className="text-gray-500 text-sm sm:text-base">{coordinator.position}</p>
+
+      {/* Social Media Icons */}
+      <div className="mt-4 flex gap-6 text-xl text-gray-700">
+        <a
+          href={coordinator.insta}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-pink-500 transition"
+        >
+          <FaInstagram />
+        </a>
+        <a
+          href={coordinator.linkdin}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-blue-500 transition"
+        >
+          <FaLinkedin />
+        </a>
+        <a
+          href={`mailto:${coordinator.email}`}
+          className="hover:text-yellow-500 transition"
+        >
+          <FaEnvelope />
+        </a>
       </div>
-    );
+    </motion.div>
+  );
 };
 
 const CoordinatorsList = () => {
-    return (
-      <div className="container mx-auto p-6">
-        <h2 className="text-2xl font-bold text-center mb-6">Society Coordinators</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6">
-          {Coordinators.map((coordinator, index) => (
-            <CoordinatorCard key={index} coordinator={coordinator} />
-          ))}
-        </div>
+  return (
+    <div className="container mx-auto p-6 flex flex-col items-center">
+      <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6 text-center">Society Coordinators</h2>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8">
+        {Coordinators.map((coordinator, index) => (
+          <CoordinatorCard key={index} coordinator={coordinator} />
+        ))}
       </div>
-    );
+    </div>
+  );
 };
 
 export default CoordinatorsList;
