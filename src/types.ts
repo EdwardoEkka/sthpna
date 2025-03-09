@@ -32,5 +32,5 @@ export type Developer = {
   position: string;
   insta: string;
   linkdin: string;
-  email: string;
+  e_mail: string;
 }

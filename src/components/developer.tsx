@@ -38,7 +38,7 @@ const ProfileCard: React.FC<ProfileCardProps> = ({ developer }) => {
           <a href={developer.linkdin} target="_blank" rel="noopener noreferrer" className="hover:text-blue-500 transition">
             <FaLinkedin />
           </a>
-          <a href={developer.email} className="hover:text-yellow-500 transition">
+          <a href={`mailto:${developer.e_mail}`} className="hover:text-yellow-500 transition">
             <FaEnvelope />
           </a>
         </div>
