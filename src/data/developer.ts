@@ -1,6 +1,6 @@
 const Developer = [
     {
-        img: "./imgs/sunil-pic.jpg",
+        img: "./imgs/sunil.jpg",
         name: "Sunil Kumar Bal",
         position: "Frontend Developer & Web-Lead",
         insta: "https://www.instagram.com/its_sunilb?igsh=MWw4c3NvcDN1OXYwNQ==",

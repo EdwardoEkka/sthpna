@@ -21,7 +21,7 @@ const ProfileCard: React.FC<ProfileCardProps> = ({ developer }) => {
       >
         {/* 🔹 Profile Image */}
         <img
-          src={developer.img}
+          src={`/images/${developer.img}`}
           alt={developer.name}
           className="w-24 h-24 object-cover rounded-full border-4 border-red-500 shadow-md"
         />

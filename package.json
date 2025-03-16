@@ -19,6 +19,7 @@
     "react-simple-typewriter": "^5.0.1",
     "react-slick": "^0.30.3",
     "slick-carousel": "^1.8.1",
+    "swiper": "^11.2.5",
     "vite-react-typescript-starter": "file:"
   },
   "devDependencies": {

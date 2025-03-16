@@ -34,3 +34,23 @@ export type Developer = {
   linkdin: string;
   e_mail: string;
 }
+
+export type GraphicDesigner = {
+  img: string;
+  name: string;
+} 
+
+export type GraphicLead = {
+  img: string;
+  name: string;
+}
+
+export type Containwriter = {
+  img: string;
+  name: string; 
+}
+
+export type Videography = {
+  img: string;
+  name: string;
+}
