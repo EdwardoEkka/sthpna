@@ -4,16 +4,26 @@ import { Menu, X, ChevronRight, ChevronDown } from "lucide-react";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [hoveredDropdown, setHoveredDropdown] = useState<string | null>(null);
-  const [hoveredSubDropdown, setHoveredSubDropdown] = useState<string | null>(null);
+  const [hoveredBtech, setHoveredBtech] = useState<boolean>(false);
 
   const navItems = [
     { name: "Home", href: "/" },
+    { name: "Faculty", href: "/faculty" },
+    {
+      name: "Academic",
+      dropdown: [
+        { name: "Achievement", href: "/academic/achievement" },
+        { name: "Notes", href: "/academic/notes" },
+        { name: "PYQs", href: "/academic/pyqs" },
+      ],
+    },
     {
       name: "Students",
       dropdown: [
         { name: "M.Tech", href: "/students/mtech" },
         {
           name: "B.Tech",
+          hasSubDropdown: true,
           subDropdown: [
             { name: "2025", href: "/students/btech/2025" },
             { name: "2026", href: "/students/btech/2026" },
@@ -25,7 +35,6 @@ const Navbar = () => {
         { name: "LEAD", href: "/students/lead" },
       ],
     },
-    { name: "Faculty", href: "/faculty" },
     { name: "About", href: "/about" },
     { name: "Sthapna", href: "/sthapna" },
   ];
@@ -69,22 +78,22 @@ const Navbar = () => {
                 <button className="flex items-center gap-1 px-3 py-2 rounded-md text-sm font-medium transition-colors uppercase hover:text-primary">
                   {item.name} <ChevronDown className="w-4 h-4" />
                 </button>
-                {/* Dropdown Menu (Visible on Hover) */}
+                {/* Dropdown Menu */}
                 {hoveredDropdown === item.name && (
-                  <div className="absolute left-0  bg-white text-black shadow-md rounded-md w-48">
+                  <div className="absolute left-0 bg-white text-black shadow-md rounded-md w-48">
                     {item.dropdown.map((subItem) =>
-                      subItem.subDropdown ? (
+                      subItem.hasSubDropdown ? (
                         <div
                           key={subItem.name}
                           className="relative"
-                          onMouseEnter={() => setHoveredSubDropdown(subItem.name)}
-                          onMouseLeave={() => setHoveredSubDropdown(null)}
+                          onMouseEnter={() => setHoveredBtech(true)}
+                          onMouseLeave={() => setHoveredBtech(false)}
                         >
                           <button className="flex items-center justify-between w-full px-4 py-2 text-sm hover:bg-gray-200">
                             {subItem.name} <ChevronRight className="w-4 h-4" />
                           </button>
-                          {/* Sub-dropdown for B.Tech Years */}
-                          {hoveredSubDropdown === subItem.name && (
+                          {/* Sub-dropdown (Only for B.Tech) */}
+                          {hoveredBtech && (
                             <div className="absolute left-full top-0 ml-1 bg-white text-black shadow-md rounded-md w-40">
                               {subItem.subDropdown.map((year) => (
                                 <a
@@ -137,12 +146,12 @@ const Navbar = () => {
                   {/* Mobile Dropdown Menu */}
                   <div className="ml-4 border-l border-gray-600">
                     {item.dropdown.map((subItem) =>
-                      subItem.subDropdown ? (
+                      subItem.hasSubDropdown ? (
                         <div key={subItem.name}>
                           <button className="flex justify-between w-full px-4 py-2 text-sm hover:bg-gray-200">
                             {subItem.name} <ChevronRight className="w-4 h-4" />
                           </button>
-                          {/* Sub-dropdown for B.Tech Years */}
+                          {/* Sub-dropdown */}
                           <div className="ml-6 border-l border-gray-600">
                             {subItem.subDropdown.map((year) => (
                               <a

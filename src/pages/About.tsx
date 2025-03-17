@@ -1,145 +1,213 @@
-import React from "react";
+"use client";
+import React, { useRef } from "react";
+import { motion, useInView } from "framer-motion";
 
 const About = () => {
+  const civilRef = useRef(null);
+  const isCivilInView = useInView(civilRef, { once: true, margin: "-100px" });
+
   return (
-    <div className="bg-secondary min-h-screen text-white flex justify-center items-center p-6">
-      {/* 🔹 Bordered Container */}
-      <div className="border-2 border-red-600 p-10 rounded-2xl shadow-lg w-11/12 md:w-3/4 lg:w-2/3">
-        <section className="relative">
-          {/* 🔹 Title */}
-          <div className="text-center text-white text-3xl my-10 font-bold">
-            <h1>Veer Surendra Sai University Of Technology</h1>
-          </div>
-
-          {/* 🔹 First Paragraph */}
-          <div className="text-white text-lg leading-relaxed">
-            <p>
-              Veer Surendra Sai University of Technology, Burla: A Legacy of
-              Excellence and Innovation Nestled on the serene banks of the
-              mighty Mahanadi, Veer Surendra Sai University of Technology
-              (VSSUT), Burla stands as a monument of intellect, resilience, and
-              unyielding ambition. It is not just a university; it is an
-              emotion, a cradle of innovation where dreams are turned into
-              reality and aspirations take flight. With an illustrious history
-              spanning over six decades, VSSUT remains an epitome of academic
-              brilliance, nurturing generations of engineers, technocrats, and
-              visionaries who continue to add values to the state and country. A
-              Journey Through Time Established in 1956 as the University College
-              of Engineering (UCE), Burla, this esteemed institution holds the
-              distinction of being Odisha’s first engineering college, laying
-              the foundation for technical education in the state. What began as
-              a pioneering effort to equip young minds with the knowledge and
-              skills required for a new India has now blossomed into a
-              powerhouse of technological advancement. With an unshakable
-              commitment to academic excellence, VSSUT has traversed through the
-              time, evolving with every passing decade to meet the ever-changing
-              landscape of technology and engineering. From its inception, the
-              university has embraced progress and transformation, continuously
-              upgrading its infrastructure, curricula, and research capabilities
-              to keep pace with the global revolution in science and technology.
-              Today, VSSUT stands as a beacon of cutting-edge research,
-              fostering an ecosystem that encourages critical thinking,
-              creativity, and innovation. A Legacy of Excellence VSSUT has
-              consistently set benchmarks in technical education, research, and
-              industry collaboration. It has carved a niche for itself in fields
-              such as robotics, automation, space technology, artificial
-              intelligence, and sustainable engineering. Whether it’s excelling
-              in national and international competitions, filing patents for
-              groundbreaking inventions, or conducting pioneering research,
-              VSSUT students and faculty have left an indelible mark on the
-              global stage. The university has proudly produced leaders,
-              entrepreneurs, and technocrats who have not only contributed to
-              the industry but have also driven change in society. From
-              prestigious IITs and IIMs to global tech giants and thriving
-              startups, the footprints of VSSUT alumni can be found across the
-              world, leading with brilliance, ingenuity, and purpose. More Than
-              an Institution – A Thriving Community Beyond its academic stature,
-              VSSUT is a vibrant community of thinkers, innovators, and
-              dreamers. It is a place where students forge lifelong friendships,
-              embrace challenges, and push the boundaries of knowledge. The lush
-              green campus, with its historic structures and modern
-              laboratories, creates an environment where inspiration meets
-              perspiration. It is a space where late-night brainstorming
-              sessions, impromptu tech discussions, and cultural fests bring out
-              the best in every student. The spirit of VSSUT is not just about
-              acquiring knowledge; it is about applying it to create real-world
-              impact. The ethos of the university is deeply rooted in integrity,
-              perseverance, and excellence, making every graduate a torchbearer
-              of innovation and leadership. Apart from it, the institution
-              provides a very commendable club culture of both Tech and Non-tech
-              domains which have done sky-high contributions and performances
-              over the time . A Future Steeped in Promise As VSSUT strides
-              confidently into the future, it continues to embrace newer
-              challenges, emerging technologies, and evolving academic
-              paradigms. With a vision to redefine engineering education, the
-              university remains committed to nurturing the next generation of
-              pioneers and change-makers. The journey ahead is filled with
-              promise, and as it has done for over six decades, VSSUT will
-              continue to stand as a symbol of knowledge, ambition, and an
-              indomitable spirit. For those who walk through its gates, VSSUT is
-              more than a university; it is a journey, a transformation, and a
-              lifelong identity. Here, excellence is not just a pursuit it is a
-              way of life.
-            </p>
-          </div>
-        </section>
-
-        <section className="mt-10">
-          {/* 🔹 Title */}
-          <div className="text-center text-white text-3xl my-10 font-bold">
-            <h1> About Civil Engineering Society</h1>
-          </div>
-
-          {/* 🔹 Second Paragraph */}
-          <div className="text-white text-lg leading-relaxed">
-            <p>
-              Civil Engineering at VSSUT, Burla: Building a Better Tomorrow At
-              Veer Surendra Sai University of Technology (VSSUT), Burla, Civil
-              Engineering is more than just a branch of study—it is a legacy of
-              innovation, resilience, and transformative impact. Established as
-              one of the university’s founding disciplines, the Civil
-              Engineering department has stood as a pillar of excellence,
-              shaping generations of engineers who don’t just construct
-              buildings and bridges but redefine the very landscapes they work
-              upon. A Tradition of Excellence From sustainable infrastructure
-              development to pioneering advancements in water resource
-              management, VSSUT’s Civil Engineering department has consistently
-              been at the forefront of cutting-edge research and practical
-              innovation. Its contributions have extended far beyond the
-              classroom, influencing key sectors such as urban planning,
-              disaster management, transportation engineering, and structural
-              resilience. The department has played a crucial role in
-              revitalizing flood control systems, optimizing rural and urban
-              development projects, and integrating eco-friendly construction
-              methodologies to build a greener, more sustainable world. Shaping
-              the Future Through Innovation With a strong emphasis on real-world
-              applications, the department actively engages in smart city
-              initiatives, sustainable housing solutions, and climate-resilient
-              infrastructure projects. Its research on green building
-              technologies, earthquake-resistant structures, and efficient
-              transportation networks is helping address modern-day challenges
-              while ensuring long-term sustainability. From hydropower
-              advancements to intelligent traffic systems, VSSUT’s civil
-              engineers are designing solutions that not only improve everyday
-              life but also secure the future. Beyond Builders: Innovators &
-              Change-Makers VSSUT’s Civil Engineering graduates are more than
-              just builders; they are visionaries, problem-solvers, and leaders
-              committed to engineering a better tomorrow. With a strong
-              foundation in technical expertise and a forward-thinking approach,
-              they are shaping the world with designs that prioritize both
-              progress and environmental responsibility. At VSSUT, Civil
-              Engineering is not just about construction—it’s about creating
-              possibilities, connecting communities, and leaving a lasting
-              legacy. With every structure they build, every innovation they
-              introduce, and every problem they solve, they reinforce the bridge
-              between technology and humanity, ensuring that development is not
-              just about expansion but about sustainability, resilience, and
-              societal well-being. VSSUT Civil Engineering: Engineering a
-              Sustainable Future, One Innovation at a Time.
-            </p>
-          </div>
-        </section>
+    <div className="bg-secondary min-h-screen text-white p-6">
+      {/* 🔹 Image Section (Responsive) */}
+      <div className="flex flex-wrap justify-center md:justify-end items-center gap-8 mt-20">
+        <motion.img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbcFreVnfeNR7riQfU4VtdmJpm6CtnIO4LVQ&s"
+          alt="VSSUT Logo"
+          className="md:w-[300px] w-[80%] h-auto rotate-45 shadow-lg object-cover"
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1 }}
+        />
+        <motion.img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbcFreVnfeNR7riQfU4VtdmJpm6CtnIO4LVQ&s"
+          alt="VSSUT Logo"
+          className="md:w-[300px] w-[80%] h-auto rotate-45 shadow-lg object-cover"
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1 }}
+        />
+        <motion.img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbcFreVnfeNR7riQfU4VtdmJpm6CtnIO4LVQ&s"
+          alt="VSSUT Logo"
+          className="md:w-[300px] w-[80%] h-auto rotate-45 shadow-lg object-cover"
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1 }}
+        />
       </div>
+
+      {/* 🔹 Civil Engineering Section */}
+      <section ref={civilRef} className="mt-16 px-4 max-w-5xl mx-auto">
+        <motion.h1
+          className="text-3xl md:text-4xl font-bold mb-6 text-center md:text-left"
+          initial={{ opacity: 0, x: -50 }}
+          animate={isCivilInView ? { opacity: 1, x: 0 } : {}}
+          transition={{ duration: 1 }}
+        >
+          About Civil Engineering Society
+        </motion.h1>
+        <motion.p
+          className="text-lg leading-relaxed"
+          initial={{ opacity: 0, y: 20 }}
+          animate={isCivilInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 1, delay: 0.5 }}
+        >
+           The Department of Civil Engineering has been in existence since 1956
+          with the inception of VSSUT, BURLA and is producing high quality
+          technical manpower needed by industry, R&D organizations, and academic
+          institutions. The departmental activities embrace Planning, Design,
+          Construction and Management. The syllabi of the department have been
+          tremendously augmented with many advanced courses. The Department
+          offers B.Tech degree in Civil Engineering and M.Tech. degree in Civil
+          Engineering with five specializations, i.e., Structural Engineering,
+          Geotechnical Engineering, Transportation Engineering, Water Resources
+          Engineering., and Environmental Engineering. Besides this, the
+          department also offers 5 years Dual Degree B.Tech in Civil Engineering
+          and M.Tech in Structural Engineering and Ph. D degree. The B.Tech
+          programme of this Department has been accredited under Tier-I program
+          by National Board of Accreditation (NBA-Washington Accord) in 2016 for
+          five years (2016-2020), which is a rare distinction. With this
+          accreditation, the Department of Civil Engineering of VSSUT Burla has
+          become an elite member in the club of only twenty reputed Institutions
+          across the country which includes National Institutes of Technology
+          (NITs). Presently the department has student strength of about 830 out
+          of which about 300 students are perusing their Masters and PhD
+          degrees. The faculty members of the department are well qualified
+          having their highest degrees from reputed international and national
+          institute like IITs and NITs. Moreover, seventeen out of existing 29
+          faculty members are with PhD qualification.
+        </motion.p>
+      </section>
+
+      {/* 🔹 Vision & Mission Section */}
+      <section className="mt-16 px-4 max-w-5xl mx-auto">
+        <motion.h1
+          className="text-3xl md:text-4xl font-bold mb-6 text-center md:text-left"
+          initial={{ opacity: 0, x: -50 }}
+          animate={isCivilInView ? { opacity: 1, x: 0 } : {}}
+          transition={{ duration: 1 }}
+        >
+          Department's Vision & Mission
+        </motion.h1>
+
+        <motion.h2 className="text-2xl font-semibold mb-4">Vision</motion.h2>
+        <motion.p className="text-lg leading-relaxed">
+        To emerge as an internationally acclaimed Civil Engineering Department
+          for imparting futuristic technical education and creation of vibrant
+          research enterprise to create quality civil engineering and
+          researchers, truly world class leaders and unleash technological
+          innovations to serve the global society and improve the quality of
+          life.
+        </motion.p>
+
+        <motion.h2 className="text-2xl font-semibold mt-6 mb-4">Mission</motion.h2>
+        <motion.ul className="list-disc pl-6 space-y-2">
+        <li>
+            Participative learning in a cross­cultural environment that promotes
+            the learning beyond the class room.
+          </li>
+          <li>
+            {" "}
+            Collaborative partnership with industries and academia within and
+            outside the country in learning and research.
+          </li>
+          <li>
+            {" "}
+            Encouraging innovative research and consultancy through the active
+            participation and involvement of all faculty members.
+          </li>
+          <li>
+            Facilitating technology transfer, innovation and economic
+            development to flow as natural results of research where ever
+            appropriate.
+          </li>
+          <li>
+            Expanding curricula to cater broader perspectives. Creation of
+            service opportunities for upliftment of the society at large.
+          </li>
+        </motion.ul>
+      </section>
+
+      {/* 🔹 Programme Educational Objectives */}
+      <section className="mt-16 px-4 max-w-5xl mx-auto">
+        <motion.h2 className="text-3xl md:text-4xl font-bold mb-6">
+          Programme Educational Objectives (PEOs)
+        </motion.h2>
+        <motion.ul className="list-disc pl-6 space-y-2 text-lg leading-relaxed">
+        <li>
+            PEO-1: To lead a successful career in industries or pursue higher
+            studies or entrepreneurial endeavors.
+          </li>
+          <li>
+            {" "}
+            PEO-2: To offer techno commercially feasible and socially acceptable
+            solutions to real life engineering problems..
+          </li>
+          <li>
+            {" "}
+            PEO-3: To demonstrate effective communication skill, professional
+            attitude, and a desire to learn.
+          </li>
+          <li>
+            PEO-4: To have a reputation as a source of innovative solutions for
+            challenging problems.
+          </li>
+          <li>PEO-5: To be a trustworthy and respectful member in society.</li>
+        </motion.ul>
+      </section>
+
+      {/* 🔹 Programme Outcomes */}
+      <section className="mt-16 px-4 max-w-5xl mx-auto">
+        <motion.h2 className="text-3xl md:text-4xl font-bold mb-6">
+          Programme Outcomes (POs)
+        </motion.h2>
+        <motion.ul className="list-disc pl-6 space-y-2 text-lg leading-relaxed">
+        <li>
+            Ability to apply knowledge of mathematics, science and engineering
+            to solve complex problems in civil engineering
+          </li>
+          <li>
+            {" "}
+            Ability to identify, formulate, and solve complex civil engineering
+            problems using first principle of mathematics, basic science &
+            engineering
+          </li>
+          <li>
+            {" "}
+            Ability to design, implement & evaluate civil engineering projects
+            to meet societal and environmental needs.
+          </li>
+          <li>
+            Ability to design and conduct complex civil engineering experiments
+            as well as to analyze and interpret the experimental data.
+          </li>
+          <li>
+            Ability to assess impact of contemporary social issues on
+            professional practice.
+          </li>
+          <li>
+            Ability to recognize the sustainability and environmental impact of
+            the engineering solutions
+          </li>
+          <li>
+            Ability to follow prescribed norms, responsibilities and ethics in
+            engineering practices.
+          </li>
+          <li>Ability to work effectively as an individual and in a team.</li>
+          <li>
+            Ability to communicate effectively through oral, written and
+            pictorial means with engineering community and the society at large.
+          </li>
+          <li>
+            Ability to recognize the need for and to engage in life­long
+            learning.
+          </li>
+          <li>
+            Ability to understand and apply engineering and management
+            principles in executing project.
+          </li>
+        </motion.ul>
+      </section>
     </div>
   );
 };

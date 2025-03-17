@@ -36,7 +36,7 @@ const VideoSliderCard: React.FC = () => {
         <SwiperSlide>
           <video
             ref={videoRefs[0]}
-            className="w-full h-full object-cover rounded-lg"
+            className="w-full h-full object-contain rounded-lg"
             controls
             onPlay={() => handlePlay(0)}
           >
@@ -48,9 +48,9 @@ const VideoSliderCard: React.FC = () => {
         {/* 🔹 Image 1 */}
         <SwiperSlide>
           <img
-            src="/imgs/Comingsoon.jpg"
+            src="/imgs/Comingsoon.png"
             alt="Event 1"
-            className="w-full h-full object-cover rounded-lg"
+            className="w-full h-full object-contain rounded-lg"
           />
         </SwiperSlide>
 
@@ -58,7 +58,7 @@ const VideoSliderCard: React.FC = () => {
         <SwiperSlide>
           <video
             ref={videoRefs[1]}
-            className="w-full h-full object-cover rounded-lg"
+            className="w-full h-full object-contain rounded-lg"
             controls
             onPlay={() => handlePlay(1)}
           >
@@ -70,9 +70,9 @@ const VideoSliderCard: React.FC = () => {
         {/* 🔹 Image 2 */}
         <SwiperSlide>
           <img
-            src="/imgs/Civil Engineering Society.jpg"
+            src="/imgs/Civil Engineering Society.png"
             alt="Event 2"
-            className="w-full h-full object-cover rounded-lg"
+            className="w-full h-full object-contain rounded-lg"
           />
         </SwiperSlide>
       </Swiper>

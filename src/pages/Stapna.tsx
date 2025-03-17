@@ -4,6 +4,7 @@ import EventList from "../components/events";
 import ProfileCard from "../components/developer";
 import AboutCard from "../components/Aboutsthapna";
 import VideoSliderCard from "../components/Sthapnavid";
+import TimelineCard from "../components/Timeline";
 
 const TypingText = ({ text }: { text: string }) => {
   const [displayText, setDisplayText] = useState("");
@@ -47,12 +48,13 @@ const Stapna = () => {
       <section className="pt-16 mb-20 mt-10 sm:pt-20 pb-8 sm:pb-16 w-full">
         <motion.div
           initial={{ y: -50, opacity: 0 }}
-          whileInView={{ y: 0, opacity: 1 }}
+          animate={{ y: 0, opacity: 1 }}
           transition={{
-            duration: 1.2,
-            delay: 0.5,
+            duration: 1.5,
+            delay: 0.8,
             type: "spring",
             stiffness: 200,
+            ease: easeInOut,
           }}
         >
           <img
@@ -69,14 +71,13 @@ const Stapna = () => {
         {/* About Card */}
         <motion.div
           initial={{ x: -100, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
+          animate={{ x: 0, opacity: 1 }}
           transition={{
             duration: 1.2,
             delay: 0.8,
-            once: true,
-            ease: easeInOut,
+            ease: "easeInOut",
           }}
-          className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-xs"
+          className="w-full max-w-2xl sm:max-w-xl md:max-w-lg lg:max-w-md min-h-[800px]"
         >
           <AboutCard />
         </motion.div>
@@ -84,7 +85,7 @@ const Stapna = () => {
         {/* Video Slider */}
         <motion.div
           initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
+          animate={{ opacity: 1 }}
           transition={{
             duration: 1.2,
             delay: 1,
@@ -99,29 +100,28 @@ const Stapna = () => {
         {/* Timeline Section */}
         <motion.div
           initial={{ x: 100, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
+          animate={{ x: 0, opacity: 1 }}
           transition={{
             duration: 1.2,
             delay: 1.2,
             once: true,
             ease: easeInOut,
           }}
-          className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-xs"
+          className="w-full mt-56 max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg"
         >
-          <h1 className="text-lg sm:text-xl font-semibold mb-2">TIME-LINE</h1>
-          <div className="h-72 sm:h-80 bg-white w-full rounded-lg flex items-center justify-center text-black font-bold text-lg">
-            Coming Soon...
+          <div className="h-72 sm:h-80 mb-[100px]  w-full rounded-lg flex items-center justify-center text-black font-bold text-lg">
+            <TimelineCard/>
           </div>
         </motion.div>
       </section>
 
       {/* Events Section */}
-      <section className="w-full px-4 sm:px-10 md:px-20 py-10 sm:py-16">
+      <section className="w-full px-4 sm:px-10 mt-[100px] md:px-20 py-10 mt-[100px] sm:py-16">
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
-          whileInView={{ opacity: 1, scale: 1 }}
+          animate={{ opacity: 1, scale: 1 }}
           transition={{
-            duration: 1,
+            duration: 0.8,
             delay: 1.4,
             once: true,
           }}
