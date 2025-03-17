@@ -5,6 +5,8 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [hoveredDropdown, setHoveredDropdown] = useState<string | null>(null);
   const [hoveredBtech, setHoveredBtech] = useState<boolean>(false);
+  const [mobileDropdown, setMobileDropdown] = useState<string | null>(null);
+  const [mobileBtechOpen, setMobileBtechOpen] = useState<boolean>(false);
 
   const navItems = [
     { name: "Home", href: "/" },
@@ -140,41 +142,53 @@ const Navbar = () => {
             {navItems.map((item) =>
               item.dropdown ? (
                 <div key={item.name}>
-                  <button className="flex justify-between w-full text-left px-3 py-2 rounded-md text-base font-medium hover:text-primary">
+                  <button
+                    onClick={() =>
+                      setMobileDropdown(mobileDropdown === item.name ? null : item.name)
+                    }
+                    className="flex justify-between w-full text-left px-3 py-2 rounded-md text-base font-medium hover:text-primary"
+                  >
                     {item.name} <ChevronDown className="w-4 h-4" />
                   </button>
                   {/* Mobile Dropdown Menu */}
-                  <div className="ml-4 border-l border-gray-600">
-                    {item.dropdown.map((subItem) =>
-                      subItem.hasSubDropdown ? (
-                        <div key={subItem.name}>
-                          <button className="flex justify-between w-full px-4 py-2 text-sm hover:bg-gray-200">
-                            {subItem.name} <ChevronRight className="w-4 h-4" />
-                          </button>
-                          {/* Sub-dropdown */}
-                          <div className="ml-6 border-l border-gray-600">
-                            {subItem.subDropdown.map((year) => (
-                              <a
-                                key={year.name}
-                                href={year.href}
-                                className="block px-4 py-2 text-sm hover:bg-gray-800"
-                              >
-                                {year.name}
-                              </a>
-                            ))}
+                  {mobileDropdown === item.name && (
+                    <div className="ml-4 border-l border-gray-600">
+                      {item.dropdown.map((subItem) =>
+                        subItem.hasSubDropdown ? (
+                          <div key={subItem.name}>
+                            <button
+                              onClick={() => setMobileBtechOpen(!mobileBtechOpen)}
+                              className="flex justify-between w-full px-4 py-2 text-sm hover:bg-gray-200"
+                            >
+                              {subItem.name} <ChevronRight className="w-4 h-4" />
+                            </button>
+                            {/* Sub-dropdown */}
+                            {mobileBtechOpen && (
+                              <div className="ml-6 border-l border-gray-600">
+                                {subItem.subDropdown.map((year) => (
+                                  <a
+                                    key={year.name}
+                                    href={year.href}
+                                    className="block px-4 py-2 text-sm hover:bg-gray-800"
+                                  >
+                                    {year.name}
+                                  </a>
+                                ))}
+                              </div>
+                            )}
                           </div>
-                        </div>
-                      ) : (
-                        <a
-                          key={subItem.name}
-                          href={subItem.href}
-                          className="block px-4 py-2 text-sm hover:bg-gray-800"
-                        >
-                          {subItem.name}
-                        </a>
-                      )
-                    )}
-                  </div>
+                        ) : (
+                          <a
+                            key={subItem.name}
+                            href={subItem.href}
+                            className="block px-4 py-2 text-sm hover:bg-gray-800"
+                          >
+                            {subItem.name}
+                          </a>
+                        )
+                      )}
+                    </div>
+                  )}
                 </div>
               ) : (
                 <a
