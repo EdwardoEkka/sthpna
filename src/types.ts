@@ -54,3 +54,28 @@ export type Videography = {
   img: string;
   name: string;
 }
+
+export type ContentwriterLead = {
+  img: string;
+  name: string;
+}
+
+export type PhotographyLead = {
+  img: string;
+  name: string;
+}
+
+export type MarketingLead ={
+  img: string;
+  name: string;
+}
+
+export type Guest = {
+  img: string;
+  name: string;
+}
+
+export type Marketingmember = {
+  img: string;
+  name: string;
+}

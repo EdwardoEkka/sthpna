@@ -5,6 +5,7 @@ import ProfileCard from "../components/developer";
 import AboutCard from "../components/Aboutsthapna";
 import VideoSliderCard from "../components/Sthapnavid";
 import TimelineCard from "../components/Timeline";
+import GuestList from "../components/guestper";
 
 const TypingText = ({ text }: { text: string }) => {
   const [displayText, setDisplayText] = useState("");
@@ -127,6 +128,21 @@ const Stapna = () => {
           }}
         >
           <EventList />
+        </motion.div>
+      </section>
+
+      {/* Events Section */}
+      <section className="w-full px-4 sm:px-10 mt-[100px] md:px-20 py-10 mt-[100px] sm:py-16">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{
+            duration: 0.8,
+            delay: 1.4,
+            once: true,
+          }}
+        >
+          <GuestList />
         </motion.div>
       </section>
     </div>

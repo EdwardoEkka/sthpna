@@ -5,6 +5,11 @@ import GraphicLeadList from "../components/graphicLead";
 import ContainerWriterList from "../components/containerWriter";
 import CoordinatorsList from "../components/coordinators";
 import VideographyList from "../components/vedioGraphy";
+import ContentWriterL from "../components/cwLead";
+import PhotographyLeadList from "../components/Photography";
+import Marketing from "../components/MarketingLead";
+import MarketMemberList from "../components/Marketing";
+
 
 const Lead = () => {
   return (
@@ -62,7 +67,7 @@ const Lead = () => {
             LEADS :
           </h2>
           <div className="flex flex-wrap justify-center items-center gap-6 w-full">
-            <GraphicLeadList />
+            <ContentWriterL />
           </div>
         </div>
 
@@ -89,7 +94,7 @@ const Lead = () => {
             LEADS :
           </h2>
           <div className="flex flex-wrap justify-center items-center gap-6 w-full">
-            <GraphicLeadList />
+            <PhotographyLeadList />
           </div>
         </div>
 
@@ -102,6 +107,32 @@ const Lead = () => {
             <VideographyList />
           </div>
         </div>
+
+
+        <h1 className="text-3xl md:text-4xl font-bold text-center my-10 mt-32">
+          Marketing & Sponsorship
+        </h1>
+        {/* 🔹 Leads (Centered) */}
+        <div className="w-full max-w-4xl flex flex-col items-start">
+          <h2 className="text-2xl md:text-3xl font-bold text-center mb-6 ml-6">
+            LEADS :
+          </h2>
+          <div className="flex flex-wrap justify-center items-center gap-6 w-full">
+            <Marketing />
+          </div>
+        </div>
+
+        {/* 🔹 Members (Centered) */}
+        <div className="w-full max-w-4xl flex flex-col items-start mt-10">
+          <h2 className="text-2xl md:text-3xl font-bold text-center mb-6 ml-6">
+            MEMBERS :
+          </h2>
+          <div className="flex flex-wrap justify-center items-center gap-6">
+            <MarketMemberList />
+          </div>
+        </div>
+
+        
       </section>
     </div>
   );

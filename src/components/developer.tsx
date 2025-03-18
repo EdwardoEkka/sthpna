@@ -49,7 +49,7 @@ const ProfileCard: React.FC<ProfileCardProps> = ({ developer }) => {
 
 const DeveloperList: React.FC = () => {
   return (
-    <div className="container mx-auto p-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-4 justify-center">
+    <div className="container mx-auto p-6 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-4 justify-center">
       {Developer.map((developer, index) => (
         <ProfileCard key={index} developer={developer} />
       ))}

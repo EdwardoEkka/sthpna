@@ -1,11 +1,11 @@
 const GraphicLead = [
     {
-        img: "xyz",
-        name: "xyz",
+        img: "/imgs/Leads/manish.jpg",
+        name: "Manish Sarangi",
     },
     {
-        img: "",
-        name: "",
+        img: "/imgs/Leads/pradeep.jpg",
+        name: "Pradeep Kumar Pradhan",
     },
 ]
 

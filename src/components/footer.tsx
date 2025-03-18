@@ -7,7 +7,15 @@ const Footer = () => {
             <footer className="bg-white/10 backdrop-blur-lg py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <HardHat className="h-8 w-8 text-primary mx-auto mb-4" />
+            {/* Sponsored Logo (ABG) */}
+            <div className="flex flex-col items-center text-center mb-6">
+              <span className="text-xs text-white uppercase font-bold">Powered by</span>
+              <img
+                src="/imgs/sponcer/abg.jpg"
+                alt="ABG Logo"
+                className="w-16 h-16 object-contain"
+              />
+            </div>
             <p className="text-gray-400">
               © 2024 Sthapna. All rights reserved.
             </p>

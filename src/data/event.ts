@@ -1,6 +1,6 @@
 const Event = [
     {
-        img: "/imgs/Events/constructive.jpg",
+        img: "/imgs/Events/cad-clash.jpg",
         name: "Cad-Clash",
         btn: "https://forms.gle/xRcy9yWrNBQeA1XF8",
         rules: ["rule-1",'rule-2',]
@@ -51,14 +51,11 @@ const Event = [
     {
         img: "/imgs/Events/civiltalk.jpg",
         name: "Civil-Talk",
-        btn: "https://forms.gle/KA5DWHxLJUxQnnhZ7",
-        rules: ["rule-1",'rule-2',]
+       
     },
     {
         img: "/imgs/Events/streetscape.jpg",
         name: "Street-Scape",
-        btn: "https://forms.gle/Rear2nZuMSNAgyd78",
-        rules: ["rule-1",'rule-2',]
     },
     
     {
@@ -68,8 +65,8 @@ const Event = [
         rules: ["rule-1",'rule-2',]
     },
     {
-        img: "/imgs/Events/archlens.jpg",
-        name: "ARCHLENS",
+        img: "/imgs/Events/Beyondwords.jpg",
+        name: "Nexora",
         btn: "https://forms.gle/SBDYxKh9j3myxkoD8",
         rules: ["rule-1",'rule-2',]
     },

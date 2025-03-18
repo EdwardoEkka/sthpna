@@ -8,30 +8,36 @@ function Home() {
   return (
     <div className="min-h-screen text-white">
       {/* Hero Section */}
-      <section className="relative pt-20 pb-32 ">
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1590596504144-f08686ef0be7?auto=format&fit=crop&q=80')] bg-cover bg-center">
-          {/* <div className="absolute inset-0 bg-black/70"></div> */}
-        </div>
+      <section className="relative pt-20 pb-32">
+        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1590596504144-f08686ef0be7?auto=format&fit=crop&q=80')] bg-cover bg-center" />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20">
           <div className="text-center mt-8">
-            <h1 className="text-3xl sm:text-6xl font-bold mb-4 mt-10">
-              CIVIL ENGINEERING
-            </h1>
+            <h1 className="text-3xl sm:text-6xl font-bold mb-4 mt-10">CIVIL ENGINEERING</h1>
             <h1 className="text-3xl sm:text-6xl font-bold">SOCIETY</h1>
           </div>
-
         </div>
       </section>
 
       <hr />
 
-      {/* Notice Board & Carousel */}
-      <section className="w-full p-4  flex flex-col md:flex-row justify-center items-center gap-10">
-        {/* Notice Board */}
-        <div className="w-full md:w-[400px] h-auto">
+      {/* Notice Board & PDF Section */}
+      <section className="w-full p-4 flex flex-col md:flex-row justify-center items-center gap-10">
+        <div className="w-full md:w-[400px] flex flex-col gap-6 ">
+          {/* Notice Board */}
           <NoticeBoardCard />
+          {/* PDF Box */}
+          <div className="p-4 bg-white/10 backdrop-blur-lg border border-white/20 shadow-lg rounded-md">
+            <h2 className="text-xl font-bold mb-3">Brochure & Newsletter</h2>
+            <ul className="list-disc pl-5 text-gray-300">
+              <li>
+                <a href="/path/to/brochure.pdf" className="text-blue-400 hover:underline"> Brochure</a>
+              </li>
+              <li>
+                <a href="/path/to/newsletter.pdf" className="text-blue-400 hover:underline"> Newsletter</a>
+              </li>
+            </ul>
+          </div>
         </div>
-
         {/* Carousel */}
         <div className="w-full md:w-3/5">
           <HomeCarousel />
@@ -40,8 +46,8 @@ function Home() {
 
       <hr />
 
-      {/* HOD & Faculty Section */}
-      <section className="py-20">
+            {/* HOD & Faculty Section */}
+            <section className="py-20">
         <div className="max-w-5xl m-auto px-4 flex flex-col gap-10">
           {/* HOD Card */}
           <div className="p-4 bg-white/10 backdrop-blur-lg border border-white/20 shadow-lg rounded-md grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-20 items-center">
@@ -144,15 +150,6 @@ function Home() {
       <section className="py-10">
         <CoordinatorsList />
       </section>
-
-      {/* Developer Section */}
-      {/* <section className="bg-black flex flex-col justify-center items-center py-20">
-        <h1 className="text-3xl font-bold text-white mb-8">Developer & Designer</h1>
-
-        <div className="flex flex-wrap justify-center items-center gap-10 w-full max-w-screen-lg">
-          <ProfileCard />
-        </div>
-      </section> */}
     </div>
   );
 }
