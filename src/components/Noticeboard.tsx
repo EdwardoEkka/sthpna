@@ -10,10 +10,10 @@ const NoticeBoardCard: React.FC = () => {
       pdfLink: "https://i.postimg.cc/dt3Lb913/Civil-Secretaries-2025.png",
     },
     {
-      title: "🎓 Internship Opportunity",
+      title: "Study Tour Jharsuguda",
       description:
-        "L&T is offering summer internships. Apply before February 28, 2025.",
-        pdfLink: "",
+        "Industrial Tour For Pre-Final Year Students",
+        pdfLink: "https://i.postimg.cc/mrScfLvN/Study-Tour-Jharsuguda.png",
     },
     
   ];

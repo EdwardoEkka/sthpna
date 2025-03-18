@@ -32,7 +32,7 @@ const HomeCarousel: React.FC = () => {
             <img
               src={image.src}
               alt={image.alt}
-              className="w-full aspect-video object-cover"
+              className="w-full aspect-video object-contain"
             />
           </div>
         ))}
