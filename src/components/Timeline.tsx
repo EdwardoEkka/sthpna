@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const events = [
   {
     day: "Day 1",
-    date: "March 20, 2025",
+    date: "March 21, 2025",
     schedule: [
       { time: "10:00 AM", event: "Opening Ceremony" },
       { time: "12:00 PM", event: "Keynote Speech" },
@@ -15,17 +15,21 @@ const events = [
   },
   {
     day: "Day 2",
-    date: "March 21, 2025",
+    date: "March 22, 2025",
     schedule: [
-      { time: "9:00 AM - 10:00 AM", event: "Technical Workshop" },
-      { time: "11:30 AM", event: "Panel Discussion" },
-      { time: "2:00 PM", event: "Startup Pitch" },
-      { time: "5:00 PM", event: "Cultural Night" },
+      { time: "9:00 AM - 10:00 AM", event: " AutoCad (Cad Clash) " },
+      { time: "9:00 AM - 12:00 PM", event: " Hackathon (Session 1) (Build-a-thon)" },
+      { time: "10:30 AM - 12:30 PM ", event: "Quiz (Architrivia) " },
+      { time: "11:00 AM - 1:00 PM", event: "Scribble (Sketch-surge) " },
+      { time: "2:00PM - 5:00 PM", event: "Civil Talk " },
+      { time: "2:15PM - 3:00 PM", event: "Maze Hunt (Puzzle Quest) " },
+      { time: "5:00PM - 6:00 PM", event: "Extempore (Rapid- Render)  " },
+      
     ],
   },
   {
     day: "Day 3",
-    date: "March 22, 2025",
+    date: "March 23, 2025",
     schedule: [
       { time: "10:00 AM", event: "Hackathon Finals" },
       { time: "1:00 PM", event: "Award Ceremony" },

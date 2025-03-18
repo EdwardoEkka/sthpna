@@ -71,17 +71,17 @@ const Btechfinal = () => {
         <table className="min-w-full bg-white border border-gray-200 shadow-lg rounded-lg overflow-hidden">
           <thead className="bg-gray-800 text-white">
             <tr>
-              <th className="py-3 px-6 text-left">Sl No</th>
-              <th className="py-3 px-6 text-left">Regd. No</th>
-              <th className="py-3 px-6 text-left">Name of the Student</th>
+              <th className="py-3 px-4 text-left">Sl No</th>
+              <th className="py-3 px-4 text-left">Regd. No</th>
+              <th className="py-3 px-4 text-left">Name of the Student</th>
             </tr>
           </thead>
           <tbody className="divide-y divide-gray-200">
             {students.map((student) => (
               <tr key={student.id} className="hover:bg-gray-100">
-                <td className="py-3 px-6">{student.id}</td>
-                <td className="py-3 px-6">{student.regNo}</td>
-                <td className="py-3 px-6">{student.name}</td>
+                <td className="py-3 px-4 text-sm sm:text-base">{student.id}</td>
+                <td className="py-3 px-4 text-sm sm:text-base">{student.regNo}</td>
+                <td className="py-3 px-4 text-sm sm:text-base">{student.name}</td>
               </tr>
             ))}
           </tbody>
