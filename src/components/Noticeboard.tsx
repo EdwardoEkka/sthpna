@@ -4,35 +4,18 @@ import { FaFilePdf, FaExternalLinkAlt } from "react-icons/fa";
 const NoticeBoardCard: React.FC = () => {
   const notices = [
     {
-      title: "📢 Workshop Announcement",
+      title: "Civil-Secretaries 2025",
       description:
-        "A Structural Engineering Workshop will be held on March 10, 2025. Registration closes soon!",
-      pdfLink: "./noitce/Civil Secretaries 2025.pdf",
+        "Secretaries For Session of 2025",
+      pdfLink: "https://i.postimg.cc/dt3Lb913/Civil-Secretaries-2025.png",
     },
     {
       title: "🎓 Internship Opportunity",
       description:
         "L&T is offering summer internships. Apply before February 28, 2025.",
-      externalLink: "https://www.lntinternships.com",
+        pdfLink: "",
     },
-    {
-      title: "🏆 Competition Alert",
-      description:
-        "Participate in the National Bridge Design Challenge! Submit entries by April 5, 2025.",
-      pdfLink: "/notices/bridge-design-challenge.pdf",
-    },
-    {
-      title: "📝 Exam Notification",
-      description:
-        "Mid-Sem exams start from March 20, 2025. Check the official timetable.",
-      pdfLink: "/notices/exam-schedule.pdf",
-    },
-    {
-      title: "📅 Guest Lecture",
-      description:
-        "An expert talk on Sustainable Architecture by Dr. A.K. Verma on March 15, 2025.",
-      externalLink: "https://vssut.ac.in/events",
-    },
+    
   ];
 
   return (

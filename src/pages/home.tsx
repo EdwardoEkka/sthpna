@@ -18,7 +18,7 @@ function Home() {
         </div>
       </section>
 
-      <hr />
+      
 
       {/* Notice Board & PDF Section */}
       <section className="w-full p-4 flex flex-col md:flex-row justify-center items-center gap-10">
@@ -33,7 +33,7 @@ function Home() {
                 <a href="/path/to/brochure.pdf" className="text-blue-400 hover:underline"> Brochure</a>
               </li>
               <li>
-                <a href="/path/to/newsletter.pdf" className="text-blue-400 hover:underline"> Newsletter</a>
+                <a href="https://i.postimg.cc/Y9tSb6Zp/newsletter-Draft.png" className="text-blue-400 hover:underline"> Newsletter</a>
               </li>
             </ul>
           </div>
@@ -44,7 +44,7 @@ function Home() {
         </div>
       </section>
 
-      <hr />
+      
 
             {/* HOD & Faculty Section */}
             <section className="py-20">

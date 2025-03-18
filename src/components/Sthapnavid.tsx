@@ -18,8 +18,17 @@ const VideoSliderCard: React.FC = () => {
     });
   };
 
+  // Function to pause all videos on slide change
+  const handleSlideChange = () => {
+    videoRefs.forEach((videoRef) => {
+      if (videoRef.current) {
+        videoRef.current.pause(); // Pause video when slide changes
+      }
+    });
+  };
+
   return (
-    <div className="w-full max-w-6xl border-2 border-red-500 rounded-xl bg-transparent backdrop-blur-md text-white p-8 mx-auto">{/* Increased width */}
+    <div className="w-full max-w-6xl border-2 border-red-500 rounded-xl bg-transparent backdrop-blur-md text-white p-8 mx-auto">
       {/* 🔹 Heading */}
       <h2 className="text-4xl font-bold text-center mb-8">Event Highlights</h2>
 
@@ -31,6 +40,7 @@ const VideoSliderCard: React.FC = () => {
         navigation
         modules={[Pagination, Navigation]}
         className="w-full h-[500px] rounded-lg overflow-hidden"
+        onSlideChange={handleSlideChange} // Pause video when slide changes
       >
         {/* 🔹 Video 1 */}
         <SwiperSlide>
@@ -78,8 +88,8 @@ const VideoSliderCard: React.FC = () => {
       </Swiper>
 
       {/* 🔹 Content Area */}
-      <div className="mt-8 text-center px-6">{/* Increased margin and padding */}
-        <p className="text-xl leading-relaxed">{/* Increased font size */}
+      <div className="mt-8 text-center px-6">
+        <p className="text-xl leading-relaxed">
           Experience the unforgettable moments of Sthapna! Our highlight videos showcase
           the best moments, from technical sessions to cultural performances. 
           Stay tuned for more exciting events!
