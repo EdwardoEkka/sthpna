@@ -15,9 +15,9 @@ function Home() {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20">
           <div className="text-center mt-8">
             <h1 className="text-3xl sm:text-6xl font-bold mb-4 mt-10">
-              HOME OF
+              CIVIL ENGINEERING
             </h1>
-            <h1 className="text-3xl sm:text-6xl font-bold">UNEMPLOYEEMENT</h1>
+            <h1 className="text-3xl sm:text-6xl font-bold">SOCIETY</h1>
           </div>
 
         </div>
