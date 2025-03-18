@@ -42,7 +42,6 @@ const Btechfirst = () => {
     { id: 38, regNo: "2402030038", name: "SHIVAM KUMAR SINGH" },
     { id: 39, regNo: "2402030039", name: "SUBHAM SWARAJ" },
     { id: 40, regNo: "2402030040", name: "RITESH KUMAR SAHOO" },
-
     { id: 41, regNo: "2402030041", name: "PRITAM KUMAR PRADHAN" },
     { id: 42, regNo: "2402030042", name: "NITYANANDA BISWAS" },
     { id: 43, regNo: "2402030043", name: "ANKIT AMAN" },
