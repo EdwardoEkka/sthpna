@@ -40,14 +40,14 @@ const TimelineCard = () => {
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 1 }}
-      className=" shadow-lg border-2 border-red-500  rounded-2xl p-6 w-full max-w-3xl mx-auto"
+      className="shadow-lg border-2 border-red-500 rounded-2xl p-6 w-full max-w-3xl mx-auto"
     >
       <h2 className="text-3xl font-bold text-center text-white mb-4">
         📅 3-Day Event Timeline
       </h2>
 
-      {/* Scrollable Container */}
-      <div className="max-h-[660px] overflow-y-auto pr-3 scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-100">
+      {/* Scrollable Container - Completely Hidden Scrollbar */}
+      <div className="max-h-[660px] overflow-y-auto pr-3 custom-scrollbar-hidden">
         {events.map((dayEvent, index) => (
           <motion.div
             key={index}

@@ -4,7 +4,7 @@ const Containwriter = [
         name: "Aurosish Kumar Guru",
     },
     {
-        img: "/imgs/CW/Debasmita Raut.jpg",
+        img: "/imgs/CW/Debasmita Raut .jpg",
         name: "Debasmita Raut",
     },
     {

@@ -7,7 +7,7 @@ const NoticeBoardCard: React.FC = () => {
       title: "📢 Workshop Announcement",
       description:
         "A Structural Engineering Workshop will be held on March 10, 2025. Registration closes soon!",
-      pdfLink: "/notices/workshop-details.pdf",
+      pdfLink: "./noitce/Civil Secretaries 2025.pdf",
     },
     {
       title: "🎓 Internship Opportunity",
@@ -37,16 +37,13 @@ const NoticeBoardCard: React.FC = () => {
 
   return (
     <div className="w-full max-w-2xl border-2 border-red-500 rounded-xl bg-black bg-opacity-40 backdrop-blur-lg p-6 relative overflow-hidden">
-      {/* 🔹 Animated Glow Effect */}
-      <div className="absolute inset-0 bg-gradient-to-r from-transparent  to-transparent opacity-10 "></div>
-
       {/* 🔹 Heading */}
       <h2 className="text-3xl font-bold text-center text-white mb-4 tracking-widest">
-         NOTICE BOARD
+        NOTICE BOARD
       </h2>
 
-      {/* 🔹 Scrollable Notice List (Increased Height) */}
-      <div className="h-[450px] overflow-y-auto pr-3 scrollbar-hide space-y-4">
+      {/* 🔹 Scrollable Notice List (Scrollbar Hidden) */}
+      <div className="h-[500px] overflow-y-auto pr-3 custom-scrollbar-hidden space-y-4">
         {notices.map((notice, index) => (
           <div
             key={index}

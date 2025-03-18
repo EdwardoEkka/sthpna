@@ -7,7 +7,7 @@ const About = () => {
   const isCivilInView = useInView(civilRef, { once: true, margin: "-100px" });
 
   return (
-    <div className="bg-secondary min-h-screen text-white p-6">
+    <div className="bg-white/10 backdrop-blur-lg min-h-screen text-white p-6">
       {/* 🔹 Image Section (Responsive) */}
       <div className="flex flex-wrap justify-center md:justify-end items-center gap-8 mt-20">
         <motion.img

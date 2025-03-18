@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Hide scrollbar but keep scrolling enabled */
+.custom-scrollbar-hidden {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer/Edge */
+  }
+  
+  .custom-scrollbar-hidden::-webkit-scrollbar {
+    display: none; /* Chrome, Safari */
+  }
+  
+body{
+  background-image: url('/civil-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}

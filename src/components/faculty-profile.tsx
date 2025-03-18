@@ -7,8 +7,8 @@ type FacultyProfileProps = {
 
 const FacultyProfile: React.FC<FacultyProfileProps> = ( {faculty} ) => {
   return (
-    <section className="flex justify-center items-center py-10 bg-gray-900 px-4">
-      <div className="max-w-4xl w-full bg-white p-8 rounded-lg shadow-lg">
+    <section className="flex justify-center items-center py-10  px-4">
+      <div className="max-w-4xl w-full bg-white/10 backdrop-blur-lg border border-white/50 p-8 rounded-lg shadow-lg">
         <div className="flex flex-col sm:flex-row sm:items-center sm:gap-6 ">
           <div className='transition-transform duration-300 ease-in-out hover:scale-110'>
              <img
@@ -18,15 +18,15 @@ const FacultyProfile: React.FC<FacultyProfileProps> = ( {faculty} ) => {
              />
           </div>
           <div className="text-center sm:text-left mt-4 sm:mt-0">
-            <h2 className="text-2xl font-bold text-gray-800">{faculty.name}</h2>
-            <p className="text-lg text-gray-600">{faculty.designation}</p>
+            <h2 className="text-2xl font-bold text-white">{faculty.name}</h2>
+            <p className="text-lg text-white">{faculty.designation}</p>
             <div className="mt-4 space-y-2 text-left">
-              <p className="text-gray-700"><strong>Qualification:</strong> {faculty.qualification}</p>
-              <p className="text-gray-700"><strong>Specialization:</strong> {faculty.specialization}</p>
-              <p className="text-gray-700"><strong>Phone:</strong> {faculty.phone_no}</p>
-              <p className="text-gray-700"><strong>Email:</strong> {faculty.email.join(', ')}</p>
-              <p className="text-gray-700"><strong>Date of Birth:</strong> {faculty.date_of_birth}</p>
-              <p className="text-gray-700"><strong>Date of Joining:</strong> {faculty.date_of_joining}</p>
+              <p className="text-white"><strong>Qualification:</strong> {faculty.qualification}</p>
+              <p className="text-white"><strong>Specialization:</strong> {faculty.specialization}</p>
+              <p className="text-white"><strong>Phone:</strong> {faculty.phone_no}</p>
+              <p className="text-white"><strong>Email:</strong> {faculty.email.join(', ')}</p>
+              <p className="text-white"><strong>Date of Birth:</strong> {faculty.date_of_birth}</p>
+              <p className="text-white"><strong>Date of Joining:</strong> {faculty.date_of_joining}</p>
             </div>
           </div>
         </div>

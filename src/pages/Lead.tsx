@@ -8,9 +8,9 @@ import VideographyList from "../components/vedioGraphy";
 
 const Lead = () => {
   return (
-    <div className="bg-black min-h-screen text-white flex flex-col items-center">
+    <div className="bg-white/10 backdrop-blur-lg min-h-screen text-white flex flex-col items-center">
       {/* 🔹 Coordinators Section */}
-      <section className="py-10 bg-black">
+      <section className="py-10 ">
         <CoordinatorsList />
       </section>
 
@@ -25,7 +25,6 @@ const Lead = () => {
           <ProfileCard />
         </div>
       </section>
-
       {/* 🔹 Graphic Designer Section */}
       <section className="w-full flex flex-col items-center py-16 px-4">
         <h1 className="text-3xl md:text-4xl font-bold text-center mb-10">

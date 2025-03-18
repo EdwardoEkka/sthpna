@@ -9,6 +9,10 @@ import Stapna from "./pages/Stapna";
 import Btech from "./pages/Btech";
 import Mtech from "./pages/Mtech";
 import Lead from "./pages/Lead";
+import Btechfinal from "./pages/Btechfinal";
+import Btechprefinal from "./pages/Btechpre-final";
+import Btechfirst from "./pages/Btechfirst";
+import Btechsecond from "./pages/Btechsecond";
 
 
 const App: React.FC = () => {
@@ -24,6 +28,12 @@ const App: React.FC = () => {
         <Route path="/btech" element={<Btech/>}/>
         <Route path="/students/mtech" element={<Mtech/>}/>
         <Route path="/students/lead" element={<Lead/>}/>
+        <Route path="/students/btech/2025" element={<Btechfinal/>}/>
+        <Route path="/students/btech/2026" element={<Btechprefinal/>}/>
+        <Route path="/students/btech/2028" element={<Btechfirst/>}/>
+        <Route path="/students/btech/2026" element={<Btechprefinal/>}/>
+        <Route path="/students/btech/2027" element={<Btechsecond/>}/>
+
       </Routes>
       <Footer/>
     </Router>

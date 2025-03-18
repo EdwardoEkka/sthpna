@@ -8,8 +8,8 @@ const GraphicDesigner = [
         name: "Avilipsha Mishra",
     },
     {
-        img: "/imgs/GD/Bhima Chandra.jpg",
-        name: "Bhima Chandra",
+        img: "/imgs/GD/Bhima Chandra Tudu.jpg",
+        name: "Bhima Chandra Tudu",
     },
     {
         img: "/imgs/GD/Deepankar Rout.jpg",

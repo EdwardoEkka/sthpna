@@ -1,6 +1,6 @@
 const Coordinators = [
     {
-        img_url: "./imgs/saikrishna.jpg",
+        img_url: "/imgs/saikrishna.jpg",
         name: "Sai Krishna Biswal",
         position: "Branch Secretary",
         insta: "https://www.instagram.com/saikrishna_biswal?igsh=d2J1OHUwbGlrNjVx",
@@ -8,7 +8,7 @@ const Coordinators = [
         email: "saikrishnabiswal11@gmail.com",
     },
     {
-        img_url: "./imgs/pratushi.jpg",
+        img_url: "/imgs/pratushi.jpg",
         name: "Pratyushi Mohapatra",
         position: "Branch Secretary",
         insta: "https://www.instagram.com/clumsilky_19?igsh=amxpZnkzaW90bzh3",
@@ -16,7 +16,7 @@ const Coordinators = [
         email: " silkymohapatra19@gmail.com ",
     },
     {
-        img_url: "./imgs/ayush.jpg",
+        img_url: "/imgs/ayush.jpg",
         name: "Ayush Mishra",
         position: "Technical Coordinator",
         insta: "https://www.instagram.com/_aayushm?igsh=MXBnbTg3d2Nya25qZQ==",
@@ -24,7 +24,7 @@ const Coordinators = [
         email: "ayush.mishta2390@gmail.com",
     },
     {
-        img_url: "./imgs/swayanshu.jpg",
+        img_url: "/imgs/swayanshu.jpg",
         name: "Swayanshu Behera",
         position: "Student Academic Coordinator",
         insta: "https://www.instagram.com/ig_aman__0?igsh=MTIzeXA0bHFzd2t0Yw==",
@@ -32,7 +32,7 @@ const Coordinators = [
         email: "swayanshubehera@gmail.com ",
     },
     {
-        img_url: "./imgs/jyoti.jpg",
+        img_url: "/imgs/jyoti.jpg",
         name: "Jyotiraditya Mohanty",
         position: "Cultural Coordinator",
         insta: "https://www.istagram.com/krishnasabode?igsh=MWtqY2dob2Vqd2Z4cw%3D%3D&utm_source=qr",
@@ -40,7 +40,7 @@ const Coordinators = [
         email: "jyotiradityamohanty2004@gmail.com",
     },
     {
-        img_url: "./imgs/Harshita.jpg",
+        img_url: "/imgs/Harshita.jpg",
         name: "Harshita Sahu",
         position:"Cultural Coordinator",
         insta: "https://www.instagram.com/invites/contact/?utm_source=ig_contact_invite&utm_medium=copy_link&utm_content=pt2yx0d ",

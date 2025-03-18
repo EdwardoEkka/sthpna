@@ -8,7 +8,7 @@ const Developer = [
         e_mail: "balsunilkumar34@gmail.com",
     },
     {
-        img: "./imgs/ayush.jpg",
+        img: "/imgs/ayush.jpg",
         name: "Ayush Mishra",
         position: "UX & UI Designer  ",
         insta: "https://www.instagram.com/_aayushm?igsh=MXBnbTg3d2Nya25qZQ==",

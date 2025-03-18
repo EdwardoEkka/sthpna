@@ -43,7 +43,7 @@ const TypingText = ({ text }: { text: string }) => {
 
 const Stapna = () => {
   return (
-    <div className="bg-secondary text-white text-center min-h-screen flex flex-col items-center px-4 sm:px-8">
+    <div className="bg-white/10 backdrop-blur-lg text-white text-center min-h-screen flex flex-col items-center px-4 sm:px-8">
       {/* Title Section */}
       <section className="pt-16 mb-20 mt-10 sm:pt-20 pb-8 sm:pb-16 w-full">
         <motion.div

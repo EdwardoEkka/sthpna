@@ -15,6 +15,8 @@ const FacultyPage = () => {
   )
 }
 
+
+
 export default FacultyPage
 
 // px-[500px] py-20 -mx-80 

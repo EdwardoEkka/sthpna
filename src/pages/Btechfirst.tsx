@@ -1,0 +1,176 @@
+import React from "react";
+
+const Btechfirst = () => {
+  const students = [
+    { id: 1, regNo: "2402030001", name: "PRIYANSHU SAHOO" },
+    { id: 2, regNo: "2402030002", name: "ABHAY KUMAR SAHANI" },
+    { id: 3, regNo: "2402030003", name: "MUKESH BEHERA" },
+    { id: 4, regNo: "2402030004", name: "MD SAHADAT ANSARI" },
+    { id: 5, regNo: "2402030005", name: "SMRUTI SMARAN TRIPATHY" },
+    { id: 6, regNo: "2402030006", name: "BISWANATH DEBATA" },
+    { id: 7, regNo: "2402030007", name: "HRUSIKESH PANDA" },
+    { id: 8, regNo: "2402030008", name: "HIMANSU PRADHAN" },
+    { id: 9, regNo: "2402030009", name: "GOPI KISHAN BESARA" },
+    { id: 10, regNo: "2402030010", name: "OMM PRAKASH PRADHAN" },
+    { id: 11, regNo: "2402030011", name: "S RABINDRA REDDY" },
+    { id: 12, regNo: "2402030012", name: "JISHNUJIT MAHAPATRA" },
+    { id: 13, regNo: "2402030013", name: "PRIYANSU ROUTRAY" },
+    { id: 14, regNo: "2402030014", name: "GIRISH KUMAR BEHERA" },
+    { id: 15, regNo: "2402030015", name: "KARAN BEHERA" },
+    { id: 16, regNo: "2402030016", name: "ANUSHKA PRIYADARSHINI" },
+    { id: 17, regNo: "2402030017", name: "ARPIT PATTNAIK" },
+    { id: 18, regNo: "2402030018", name: "SWAYANSA SUHANI" },
+    { id: 19, regNo: "2402030019", name: "SRUTIKA BISWAL" },
+    { id: 20, regNo: "2402030020", name: "PRIYARANJAN PATRA" },
+    { id: 21, regNo: "2402030021", name: "AYUSHMAN MISHRA" },
+    { id: 22, regNo: "2402030022", name: "PRAGYAN PRIYADARSHENEE" },
+    { id: 23, regNo: "2402030023", name: "SASMITA TUDU" },
+    { id: 24, regNo: "2402030024", name: "SAI AMRUTANSU" },
+    { id: 25, regNo: "2402030025", name: "DIBYA CHANDRA GARNAIK" },
+    { id: 26, regNo: "2402030026", name: "SAMEER KUMAR DASH" },
+    { id: 27, regNo: "2402030027", name: "SANTOSH PRIYADARSHI" },
+    { id: 28, regNo: "2402030028", name: "ADYASHA NAYAK" },
+    { id: 29, regNo: "2402030029", name: "BARSHA PRIYADARDHINI PALEI" },
+    { id: 30, regNo: "2402030030", name: "MANAS RANJAN SAHOO" },
+    { id: 31, regNo: "2402030031", name: "SUMIT SAHOO" },
+    { id: 32, regNo: "2402030032", name: "SHVETAVAH SARANGI" },
+    { id: 33, regNo: "2402030033", name: "ANKITA PRIYADARSHINI" },
+    { id: 34, regNo: "2402030034", name: "LAXMIKANTA MANDAL" },
+    { id: 35, regNo: "2402030035", name: "STHITAPRAGYAN MOHANTY" },
+    { id: 36, regNo: "2402030036", name: "BAIBHAB MOHANTY" },
+    { id: 37, regNo: "2402030037", name: "GOURAV NAIK" },
+    { id: 38, regNo: "2402030038", name: "SHIVAM KUMAR SINGH" },
+    { id: 39, regNo: "2402030039", name: "SUBHAM SWARAJ" },
+    { id: 40, regNo: "2402030040", name: "RITESH KUMAR SAHOO" },
+
+    { id: 41, regNo: "2402030041", name: "PRITAM KUMAR PRADHAN" },
+    { id: 42, regNo: "2402030042", name: "NITYANANDA BISWAS" },
+    { id: 43, regNo: "2402030043", name: "ANKIT AMAN" },
+    { id: 44, regNo: "2402030044", name: "MANORANJAN PRADHAN" },
+    { id: 45, regNo: "2402030045", name: "ANWESHA MISHRA" },
+    { id: 46, regNo: "2402030046", name: "JEET BANIK" },
+    { id: 47, regNo: "2402030047", name: "SATYAM SIBANANDA BISWAL" },
+    { id: 48, regNo: "2402030048", name: "AYUSHMAN NAIK" },
+    { id: 49, regNo: "2402030049", name: "SAIPRAGYA MOHAPATRA" },
+    { id: 50, regNo: "2402030050", name: "MADHABA HANSDAH" },
+    { id: 51, regNo: "2402030051", name: "BISWAMOHAN SAHOO" },
+    { id: 52, regNo: "2402030052", name: "BIBHUTI BHUSAN SAHU" },
+    { id: 53, regNo: "2402030053", name: "SUBHANKAR SAHU" },
+    { id: 54, regNo: "2402030054", name: "ASISH KUMAR SAHOO" },
+    { id: 55, regNo: "2402030055", name: "PRIYANSHU MEHER" },
+    { id: 56, regNo: "2402030056", name: "PRACHEE PRADHAN" },
+    { id: 57, regNo: "2402030057", name: "DEEPANKAR ROUT" },
+    { id: 58, regNo: "2402030058", name: "RASHMI REKHA SAHU" },
+    { id: 59, regNo: "2402030059", name: "RUCHI PANI" },
+    { id: 60, regNo: "2402030060", name: "UMESH CHANDRA ROUT" },
+    { id: 61, regNo: "2402030061", name: "DIBESH KULLU" },
+    { id: 62, regNo: "2402030062", name: "ANKITA GHADAI" },
+    { id: 63, regNo: "2402030063", name: "SEBATI SIRKA" },
+    { id: 64, regNo: "2402030064", name: "SANJANA JYOTISHI" },
+    { id: 65, regNo: "2402030065", name: "SHREYA TRIPATHY" },
+    { id: 66, regNo: "2402030066", name: "SAHIL KUMAR MEHER" },
+    { id: 67, regNo: "2402030067", name: "AKASH KU DAS" },
+    { id: 68, regNo: "2402030068", name: "DIBYASENI SETHI" },
+    { id: 69, regNo: "2402030069", name: "PRITIMAYEE PARIDA" },
+    { id: 70, regNo: "2402030070", name: "SABYASACHI ROUT" },
+    { id: 71, regNo: "2402030071", name: "NISHANT NAYAK" },
+    { id: 72, regNo: "2402030072", name: "U SHOMEET" },
+    { id: 73, regNo: "2402030073", name: "SWARAJ ORAM" },
+    { id: 74, regNo: "2402030074", name: "DR SABYASACHI MALLICK" },
+    { id: 75, regNo: "2402030075", name: "SWADHIN SAHOO" },
+    { id: 76, regNo: "2402030076", name: "ARPRIT KUMAR BEHERA" },
+    { id: 77, regNo: "2402030077", name: "SOUMYASHREE BHUKTA" },
+    { id: 78, regNo: "2402030078", name: "SPANDAN PARIDA" },
+    { "id": 79, "regNo": "2402030079", "name": "ANWESHA SAHU" },
+    { "id": 80, "regNo": "2402030080", "name": "ANJLI EPIL BHENGRA" },
+    { "id": 81, "regNo": "2402030081", "name": "HARI OM PANDA" },
+    { "id": 82, "regNo": "2402030082", "name": "SWETA SWETA PADMA ROUTARAY" },
+    { "id": 83, "regNo": "2402030083", "name": "BISWAJIT BEHERA" },
+    { "id": 84, "regNo": "2402030084", "name": "DARSPREET SINGH" },
+    { "id": 85, "regNo": "2402030085", "name": "RUPALI PARIDA" },
+    { "id": 86, "regNo": "2402030086", "name": "MD SAAD" },
+    { "id": 87, "regNo": "2402030087", "name": "AKANKSHYA PRIYADARSINI MAJHI" },
+    { "id": 88, "regNo": "2402030088", "name": "TUSHAR KUMAR NAIK" },
+    { "id": 89, "regNo": "2402030089", "name": "BISWAJIT DAS" },
+    { "id": 90, "regNo": "2402030090", "name": "ANWESH BEHERA" },
+    { "id": 91, "regNo": "2402030091", "name": "TUSHAR KISAN" },
+    { "id": 92, "regNo": "2402030092", "name": "BAISHNO DEVI" },
+    { "id": 93, "regNo": "2402030093", "name": "SAINEE SAHOO" },
+    { "id": 94, "regNo": "2402030094", "name": "REETU PRIYADARSHANI PADHAN" },
+    { "id": 95, "regNo": "2402030095", "name": "DHARITRI BISWAL" },
+    { "id": 96, "regNo": "2402030096", "name": "LOPAMUDRA MAJHI" },
+    { "id": 97, "regNo": "2402030097", "name": "KIRAN KUMAR HOTA" },
+    { "id": 98, "regNo": "2402030098", "name": "SOURADEEP NANDA" },
+    { "id": 99, "regNo": "2402030099", "name": "MANDEEP PAHAN" },
+    { "id": 100, "regNo": "2402030100", "name": "RISHIKESH SAHU" },
+    { "id": 101, "regNo": "2402030101", "name": "SAKTI SAHOO" },
+    { "id": 102, "regNo": "2402030102", "name": "AYUSH KUMAR SAHU" },
+    { "id": 103, "regNo": "2402030103", "name": "ROOPAM TRIPATHY" },
+    { "id": 104, "regNo": "2402030104", "name": "PEEYUSH PRIYADARSHAN RANA" },
+    { "id": 105, "regNo": "2402030105", "name": "DHIROJ PATRA" },
+    { "id": 106, "regNo": "2402030106", "name": "SATYAJIT SWARUP SAHANI" },
+    { "id": 107, "regNo": "2402030107", "name": "KAMALAKANTA SAHOO" },
+    { "id": 108, "regNo": "2402030108", "name": "SHIVASANKAR NAYAK" },
+    { "id": 109, "regNo": "2402030109", "name": "TAMANNA NAYAK" },
+    { "id": 110, "regNo": "2402030110", "name": "BISHNU SAHOO" },
+    { "id": 111, "regNo": "2402030111", "name": "SHUBHRANSU SHEKHAR SETHY" },
+    { "id": 112, "regNo": "2402030112", "name": "SMRUTIREKHA MOHANTY" },
+    { "id": 113, "regNo": "2402030113", "name": "CHITTARANJAN PATI" },
+    { "id": 114, "regNo": "2402030114", "name": "SWAGATIKA ACHARYA" },
+    { "id": 115, "regNo": "2402030115", "name": "TRITHARAJ MOHANTY" },
+    { "id": 116, "regNo": "2402030116", "name": "PRIYANSU PRADHAN" },
+    { "id": 117, "regNo": "2402030117", "name": "ADITYA KUMAR SARANGI" },
+    { "id": 118, "regNo": "2402031118", "name": "SUBHRANGANA MISHRA" },
+    { "id": 119, "regNo": "2402031119", "name": "JOGESWAR OTTA" },
+    { "id": 120, "regNo": "2402031120", "name": "SWASTIK KUMAR DASH" },
+    { "id": 121, "regNo": "2402031121", "name": "CHIDANANDA PRADHAN" },
+    { "id": 122, "regNo": "2402031122", "name": "DIVYANSI BABU" },
+    { "id": 123, "regNo": "2402031123", "name": "SRIKANTA BEHERA" },
+    { "id": 124, "regNo": "2402031124", "name": "ANSHU KUMAR BAURI" },
+    { "id": 125, "regNo": "2402031125", "name": "RENU BALA DAS" },
+    { "id": 126, "regNo": "2402031126", "name": "DIBYAM PANDA" },
+    { "id": 127, "regNo": "2402031127", "name": "BIKASH RANJAN SAHOO" },
+    { "id": 128, "regNo": "2402031128", "name": "CHINMAY KISHORE KISKU" },
+    { "id": 129, "regNo": "2402031129", "name": "DIBYA PRIYADARSINI" },
+    { "id": 130, "regNo": "2402031130", "name": "DEBASMITA RAUT" },
+    { "id": 131, "regNo": "2402031131", "name": "ROHITANSHU PASAYAT" },
+    { "id": 132, "regNo": "2402031132", "name": "BARUNA DEHURY" },
+    { "id": 133, "regNo": "2402031133", "name": "OMM AMLAN GUMANSINGH" },
+    { "id": 134, "regNo": "2402031134", "name": "BINAY SINGH" },
+    { "id": 135, "regNo": "2402031135", "name": "DEBASISH MALLICK" },
+    { "id": 136, "regNo": "2402031136", "name": "UMASRI BEHERA" },
+    { "id": 137, "regNo": "2402031137", "name": "KISHOR KUMAR BANDHA" },
+    { "id": 138, "regNo": "2402031138", "name": "B S DIKSHYA DWIBEDY" },
+    { "id": 139, "regNo": "2402031139", "name": "SOM PRAKASH SAMAL" },
+    { "id": 140, "regNo": "2402031140", "name": "ANWESA MISHRA" },
+    { "id": 141, "regNo": "2402032156", "name": "ARIO CHEGADO S MARAK" },
+    { "id": 142, "regNo": "2402032157", "name": "AEDRIEL MESHULLAM S SYNGKON" }
+  ];
+
+  return (
+    <div className="bg-white/10 backdrop-blur-lg p-6 min-h-screen flex justify-center items-center">
+      <div className="w-full max-w-4xl overflow-x-auto">
+        <table className="min-w-full bg-white border border-gray-200 shadow-lg rounded-lg overflow-hidden">
+          <thead className="bg-gray-800 text-white">
+            <tr>
+              <th className="py-3 px-6 text-left">Sl No</th>
+              <th className="py-3 px-6 text-left">Regd. No</th>
+              <th className="py-3 px-6 text-left">Name of the Student</th>
+            </tr>
+          </thead>
+          <tbody className="divide-y divide-gray-200">
+            {students.map((student) => (
+              <tr key={student.id} className="hover:bg-gray-100">
+                <td className="py-3 px-6">{student.id}</td>
+                <td className="py-3 px-6">{student.regNo}</td>
+                <td className="py-3 px-6">{student.name}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  );
+};
+
+export default Btechfirst;

@@ -6,28 +6,29 @@ import NoticeBoardCard from "../components/Noticeboard";
 
 function Home() {
   return (
-    <div className="bg-secondary min-h-screen text-white">
+    <div className="min-h-screen text-white">
       {/* Hero Section */}
-      <section className="relative pt-20 pb-32">
+      <section className="relative pt-20 pb-32 ">
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1590596504144-f08686ef0be7?auto=format&fit=crop&q=80')] bg-cover bg-center">
-          <div className="absolute inset-0 bg-black/70"></div>
+          {/* <div className="absolute inset-0 bg-black/70"></div> */}
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20">
           <div className="text-center mt-8">
             <h1 className="text-3xl sm:text-6xl font-bold mb-4 mt-10">
-              CIVIL ENGINEERING
+              HOME OF
             </h1>
-            <h1 className="text-3xl sm:text-6xl font-bold">SOCIETY</h1>
+            <h1 className="text-3xl sm:text-6xl font-bold">UNEMPLOYEEMENT</h1>
           </div>
+
         </div>
       </section>
 
       <hr />
 
       {/* Notice Board & Carousel */}
-      <section className="w-full p-4 bg-black flex flex-col md:flex-row justify-center items-center gap-10">
+      <section className="w-full p-4  flex flex-col md:flex-row justify-center items-center gap-10">
         {/* Notice Board */}
-        <div className="w-full md:w-[400px] h-auto md:h-[550px]">
+        <div className="w-full md:w-[400px] h-auto">
           <NoticeBoardCard />
         </div>
 
@@ -40,7 +41,7 @@ function Home() {
       <hr />
 
       {/* HOD & Faculty Section */}
-      <section className="py-20 bg-black">
+      <section className="py-20">
         <div className="max-w-5xl m-auto px-4 flex flex-col gap-10">
           {/* HOD Card */}
           <div className="p-4 bg-white/10 backdrop-blur-lg border border-white/20 shadow-lg rounded-md grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-20 items-center">
@@ -140,7 +141,7 @@ function Home() {
       </section>
 
       {/* Coordinators Section */}
-      <section className="py-10 bg-black">
+      <section className="py-10">
         <CoordinatorsList />
       </section>
 
