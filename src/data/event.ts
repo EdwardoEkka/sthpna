@@ -2,8 +2,8 @@ const Event = [
     {
         img: "/imgs/Events/cad-clash.jpg",
         name: "Cad-Clash",
-        btn: "https://forms.gle/xRcy9yWrNBQeA1XF8",
-        rules: ["rule-1",'rule-2',]
+        btn: "https://forms.gle/v2ULtdqVnLyXDEzy5",
+        rules: []
     },
     {
         img: "/imgs/Events/puzzlequest.jpg",
@@ -45,18 +45,9 @@ const Event = [
     {
         img: "/imgs/Events/sketch-surge.jpg",
         name: "Sketch-Surge",
-        btn: "https://forms.gle/5JYxd6ShoeAURBM27gister",
+        btn: "https://forms.gle/5JYxd6ShoeAURBM27",
         rules: ["rule-1",'rule-2',]
-    },
-    {
-        img: "/imgs/Events/civiltalk.jpg",
-        name: "Civil-Talk",
-       
-    },
-    {
-        img: "/imgs/Events/streetscape.jpg",
-        name: "Street-Scape",
-    },
+    },    
     
     {
         img: "/imgs/Events/archlens.jpg",
@@ -67,7 +58,7 @@ const Event = [
     {
         img: "/imgs/Events/Beyondwords.jpg",
         name: "Nexora",
-        btn: "https://forms.gle/SBDYxKh9j3myxkoD8",
+        btn: "https://forms.gle/EBrJm4NqozgRwewM8",
         rules: ["rule-1",'rule-2',]
     },
     

@@ -1,5 +1,9 @@
 const Containwriter = [
     {
+        img: "/imgs/CW/biswabandita.jpg",
+        name: "	Biswa Bandita Swain",
+    },
+    {
         img: "/imgs/CW/AurosishKumarGuru.jpg",
         name: "Aurosish Kumar Guru",
     },
