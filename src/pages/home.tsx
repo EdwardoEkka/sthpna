@@ -40,7 +40,7 @@ function Home() {
           className="w-full md:w-[400px] flex flex-col gap-6 "
           initial={{ x: -100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
-          transition={{ duration: 1, delay: 1.2, ease: easeInOut }}
+          transition={{ duration: 1.4, delay: 1.2, ease: easeInOut }}
         >
           {/* Notice Board */}
           <NoticeBoardCard />
@@ -88,7 +88,7 @@ function Home() {
             className="p-4 bg-white/10 backdrop-blur-lg border border-white/20 shadow-lg rounded-md grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-20 items-center"
             initial={{ x: -100, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
-            transition={{ duration: 1, delay: 1.5, ease: easeInOut }}
+            transition={{ duration: 1.8, delay: 1.5, ease: easeInOut }}
           >
             {/* HOD Image */}
             <div className="w-full flex justify-center md:justify-end">
@@ -128,7 +128,7 @@ function Home() {
             className="p-4 bg-white/10 backdrop-blur-lg border border-white/20 shadow-lg rounded-md grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-20 items-center"
             initial={{ x: 100, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
-            transition={{ duration: 1, delay: 1.7, ease: easeInOut }}
+            transition={{ duration: 1.8, delay: 1.7, ease: easeInOut }}
           >
             {/* HOP Details */}
             <div className="col-span-1 md:col-span-2 order-2 md:order-1">
@@ -164,7 +164,7 @@ function Home() {
             className="p-4 bg-white/10 backdrop-blur-lg border border-white/20 shadow-lg rounded-md grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-20 items-center"
             initial={{ x: -100, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
-            transition={{ duration: 1, delay: 1.9, ease: easeInOut }}
+            transition={{ duration: 1.8, delay: 1.9, ease: easeInOut }}
           >
             {/* Faculty Image */}
             <div className="w-full flex justify-center md:justify-end">
@@ -204,7 +204,7 @@ function Home() {
         className="py-10"
         initial={{ y: 100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 1, delay: 2.2, ease: easeInOut }}
+        transition={{ duration: 2, delay: 2.2, ease: easeInOut }}
       >
         <CoordinatorsList />
       </motion.section>
