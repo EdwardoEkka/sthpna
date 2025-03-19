@@ -1,11 +1,11 @@
 const Marketingmember = [
     {
         img: "/imgs/Videography/Tanay Banerjee.jpg",
-        name: "Tanay banerjee",
+        name: "Tanay Banerjee",
     },
     {
         img: "/imgs/CW/Sourav Padhy.jpg",
-        name: "Sourav padhy",
+        name: "Sourav Padhy",
     },
     {
         img: "/imgs/GD/Sai Srujana Labala.jpg",

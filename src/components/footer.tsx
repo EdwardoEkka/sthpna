@@ -13,7 +13,7 @@ const Footer = () => {
               <img
                 src="/imgs/sponcer/abg.jpg"
                 alt="ABG Logo"
-                className="w-20 h-20 object-contain mt-4"
+                className="w-28 h-28 object-contain mt-4"
               />
             </div>
             <p className="text-gray-400">

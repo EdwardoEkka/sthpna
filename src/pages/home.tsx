@@ -3,6 +3,7 @@ import HomeCarousel from "../components/home-carousel";
 import CoordinatorsList from "../components/coordinators";
 import ProfileCard from "../components/developer";
 import NoticeBoardCard from "../components/Noticeboard";
+import { easeInOut, motion,  } from "framer-motion";
 
 function Home() {
   return (
@@ -11,18 +12,36 @@ function Home() {
       <section className="relative pt-20 pb-32">
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1590596504144-f08686ef0be7?auto=format&fit=crop&q=80')] bg-cover bg-center" />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20">
-          <div className="text-center mt-8">
-            <h1 className="text-3xl sm:text-6xl font-bold mb-4 mt-10">CIVIL ENGINEERING</h1>
-            <h1 className="text-3xl sm:text-6xl font-bold">SOCIETY</h1>
+          <div className="text-center mt-8 ">
+            <motion.h1
+              className="text-3xl sm:text-6xl font-serif font-bold mb-4 mt-10 mr-28"
+              initial={{ x: -100, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ duration: 1, delay: 0.5, ease: easeInOut }}
+            >
+              "Stacking The Bricks,
+            </motion.h1>
+            <motion.h1
+              className="text-3xl sm:text-6xl font-serif font-bold ml-28"
+              initial={{ x: 100, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ duration: 1, delay: 0.5, ease: easeInOut }}
+            >
+              {" "}
+              Building The Future"
+            </motion.h1>
           </div>
         </div>
       </section>
 
-      
-
       {/* Notice Board & PDF Section */}
       <section className="w-full p-4 flex flex-col md:flex-row justify-center items-center gap-10">
-        <div className="w-full md:w-[400px] flex flex-col gap-6 ">
+        <motion.div
+          className="w-full md:w-[400px] flex flex-col gap-6 "
+          initial={{ x: -100, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ duration: 1, delay: 1.2, ease: easeInOut }}
+        >
           {/* Notice Board */}
           <NoticeBoardCard />
           {/* PDF Box */}
@@ -30,27 +49,47 @@ function Home() {
             <h2 className="text-xl font-bold mb-3">Brochure & Newsletter</h2>
             <ul className="list-disc pl-5 text-gray-300">
               <li>
-                <a href="/path/to/brochure.pdf" className="text-blue-400 hover:underline"> Brochure</a>
+                <a
+                  href="/path/to/brochure.pdf"
+                  className="text-blue-400 hover:underline"
+                >
+                  {" "}
+                  Brochure
+                </a>
               </li>
               <li>
-                <a href="https://i.postimg.cc/Y9tSb6Zp/newsletter-Draft.png" className="text-blue-400 hover:underline"> Newsletter</a>
+                <a
+                  href="https://smallpdf.com/file#s=f97ad00c-5c01-4cc7-97f2-f1a298fdf096"
+                  className="text-blue-400 hover:underline"
+                >
+                  {" "}
+                  Newsletter
+                </a>
               </li>
             </ul>
           </div>
-        </div>
+        </motion.div>
         {/* Carousel */}
-        <div className="w-full md:w-3/5">
+        <motion.div
+          className="w-full md:w-3/5"
+          initial={{ x: 100, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ duration: 1, delay: 1.2, ease: easeInOut }}
+        >
           <HomeCarousel />
-        </div>
+        </motion.div>
       </section>
 
-      
-
-            {/* HOD & Faculty Section */}
-            <section className="py-20">
+      {/* HOD & Faculty Section */}
+      <section className="py-20">
         <div className="max-w-5xl m-auto px-4 flex flex-col gap-10">
           {/* HOD Card */}
-          <div className="p-4 bg-white/10 backdrop-blur-lg border border-white/20 shadow-lg rounded-md grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-20 items-center">
+          <motion.div
+            className="p-4 bg-white/10 backdrop-blur-lg border border-white/20 shadow-lg rounded-md grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-20 items-center"
+            initial={{ x: -100, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 1, delay: 1.5, ease: easeInOut }}
+          >
             {/* HOD Image */}
             <div className="w-full flex justify-center md:justify-end">
               <div className="p-2 border rounded-md border-red-600">
@@ -64,9 +103,11 @@ function Home() {
             {/* HOD Details */}
             <div className="col-span-1 md:col-span-2">
               <h1 className="font-bold text-xl mb-2">HEAD OF DEPARTMENT</h1>
-              <h2 className="font-bold text-lg mb-2">Prof. Sudhanshu Sekhar Das</h2>
+              <h2 className="font-bold text-lg mb-2">
+                Prof. Sudhanshu Sekhar Das
+              </h2>
               <p className="text-gray-300 text-justify">
-              Welcome to the Department of Civil Engineering at VSSUT, Burla.
+                Welcome to the Department of Civil Engineering at VSSUT, Burla.
                 Our vision is to cultivate world-class civil engineers and
                 researchers through futuristic education and cutting-edge
                 research. We are committed to fostering innovation and
@@ -80,16 +121,21 @@ function Home() {
                 contribute to building a sustainable, resilient future.
               </p>
             </div>
-          </div>
+          </motion.div>
 
           {/* HOP Card */}
-          <div className="p-4 bg-white/10 backdrop-blur-lg border border-white/20 shadow-lg rounded-md grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-20 items-center">
+          <motion.div
+            className="p-4 bg-white/10 backdrop-blur-lg border border-white/20 shadow-lg rounded-md grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-20 items-center"
+            initial={{ x: 100, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 1, delay: 1.7, ease: easeInOut }}
+          >
             {/* HOP Details */}
             <div className="col-span-1 md:col-span-2 order-2 md:order-1">
               <h1 className="font-bold text-xl mb-2">HEAD OF PROGRAMME</h1>
               <h2 className="font-bold text-lg mb-2">Dr. Debabrata Giri</h2>
               <p className="text-gray-300 text-justify">
-              At the Civil Engineering Department of VSSUT, Burla, we believe
+                At the Civil Engineering Department of VSSUT, Burla, we believe
                 in participative learning and cross-cultural collaboration to
                 prepare students for real-world challenges. Through industry
                 partnerships and innovative research, we empower our students to
@@ -111,10 +157,15 @@ function Home() {
                 />
               </div>
             </div>
-          </div>
+          </motion.div>
 
           {/* Faculty Advisor Card */}
-          <div className="p-4 bg-white/10 backdrop-blur-lg border border-white/20 shadow-lg rounded-md grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-20 items-center">
+          <motion.div
+            className="p-4 bg-white/10 backdrop-blur-lg border border-white/20 shadow-lg rounded-md grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-20 items-center"
+            initial={{ x: -100, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 1, delay: 1.9, ease: easeInOut }}
+          >
             {/* Faculty Image */}
             <div className="w-full flex justify-center md:justify-end">
               <div className="p-2 border rounded-md border-red-600">
@@ -128,9 +179,11 @@ function Home() {
             {/* Faculty Details */}
             <div className="col-span-1 md:col-span-2">
               <h1 className="font-bold text-xl mb-2">FACULTY ADVISOR</h1>
-              <h2 className="font-bold text-lg mb-2">Dr. Ramkrishna Dandapat</h2>
+              <h2 className="font-bold text-lg mb-2">
+                Dr. Ramkrishna Dandapat
+              </h2>
               <p className="text-gray-300 text-justify">
-              As faculty, we are dedicated to guiding students towards
+                As faculty, we are dedicated to guiding students towards
                 academic excellence and ethical engineering practices. We
                 encourage lifelong learning, teamwork, and innovation to help
                 our students become future leaders in civil engineering.
@@ -142,14 +195,19 @@ function Home() {
                 infrastructure and sustainable development.
               </p>
             </div>
-          </div>
+          </motion.div>
         </div>
       </section>
 
       {/* Coordinators Section */}
-      <section className="py-10">
+      <motion.section
+        className="py-10"
+        initial={{ y: 100, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 1, delay: 2.2, ease: easeInOut }}
+      >
         <CoordinatorsList />
-      </section>
+      </motion.section>
     </div>
   );
 }

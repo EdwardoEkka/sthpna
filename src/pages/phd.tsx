@@ -39,7 +39,7 @@ const Phd = () => {
     { "id": 34, "regNo": "2010031004", "name": "Pritikrishna Das" },
     { "id": 35, "regNo": "1910031001", "name": "Abhay Mayank" },
     { "id": 36, "regNo": "2110031001", "name": "Sima Tjmulayan" },
-    { "id": 37, "regNo": "2410031000", "name": "Pratyoush P@a" }
+    { "id": 37, "regNo": "2410031000", "name": "Pratyush Panda" }
   ];
 
   return (

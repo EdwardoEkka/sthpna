@@ -9,9 +9,9 @@ const About = () => {
   return (
     <div className="bg-white/10 backdrop-blur-lg min-h-screen text-white p-6">
       {/* 🔹 Image Section (Responsive) */}
-      <div className="flex flex-wrap justify-center md:justify-end items-center gap-8 mt-20">
+      {/* <div className="flex flex-wrap justify-center md:justify-end items-center gap-8 mt-20">
         <motion.img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbcFreVnfeNR7riQfU4VtdmJpm6CtnIO4LVQ&s"
+          src="/imgs/abt-img4.jpg"
           alt="VSSUT Logo"
           className="md:w-[300px] w-[80%] h-auto rotate-45 shadow-lg object-cover"
           initial={{ opacity: 0, scale: 0.8 }}
@@ -19,7 +19,7 @@ const About = () => {
           transition={{ duration: 1 }}
         />
         <motion.img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbcFreVnfeNR7riQfU4VtdmJpm6CtnIO4LVQ&s"
+          src="/imgs/abt-img2.jpg"
           alt="VSSUT Logo"
           className="md:w-[300px] w-[80%] h-auto rotate-45 shadow-lg object-cover"
           initial={{ opacity: 0, scale: 0.8 }}
@@ -27,14 +27,14 @@ const About = () => {
           transition={{ duration: 1 }}
         />
         <motion.img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbcFreVnfeNR7riQfU4VtdmJpm6CtnIO4LVQ&s"
+          src="/imgs/abt-img3.jpg"
           alt="VSSUT Logo"
           className="md:w-[300px] w-[80%] h-auto rotate-45 shadow-lg object-cover"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1 }}
         />
-      </div>
+      </div> */}
 
       {/* 🔹 Civil Engineering Section */}
       <section ref={civilRef} className="mt-16 px-4 max-w-5xl mx-auto">
