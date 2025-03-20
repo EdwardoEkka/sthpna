@@ -22,7 +22,7 @@ const Lead = () => {
       {/* 🔹 Developer & Designer Section */}
       <section className="w-full flex flex-col items-center py-16 px-4">
         <h1 className="text-3xl md:text-4xl font-bold mb-8 text-center">
-          Developer & Designer
+         Website : Developer & Designer
         </h1>
 
         {/* 🔹 Centered Profile Cards */}
