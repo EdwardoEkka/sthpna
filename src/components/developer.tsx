@@ -15,7 +15,7 @@ const ProfileCard: React.FC<ProfileCardProps> = ({ developer }) => {
       <motion.div
         whileHover={{ scale: 1.05 }} // Subtle scale effect for better responsiveness
         transition={{ type: "spring", stiffness: 200, damping: 10 }}
-        className="relative bg-white p-6 rounded-2xl shadow-lg border border-gray-300
+        className="relative bg-white/10 backdrop-blur-lg p-6 rounded-2xl shadow-lg border border-gray-300
                    w-full max-w-xs flex flex-col items-center text-center text-gray-900
                    hover:shadow-2xl transition-shadow duration-300"
       >
@@ -27,11 +27,11 @@ const ProfileCard: React.FC<ProfileCardProps> = ({ developer }) => {
         />
 
         {/* 🔹 Name & Role */}
-        <h3 className="mt-4 text-lg sm:text-xl font-bold tracking-wide">{developer.name}</h3>
-        <p className="text-gray-500 text-sm sm:text-base">{developer.position}</p>
+        <h3 className="mt-4 text-lg text-white sm:text-xl font-bold tracking-wide">{developer.name}</h3>
+        <p className="text-white text-sm sm:text-base">{developer.position}</p>
 
         {/* 🔹 Social Media Icons */}
-        <div className="mt-4 flex gap-4 sm:gap-6 text-lg sm:text-xl text-gray-700">
+        <div className="mt-4 flex gap-4 sm:gap-6 text-lg sm:text-xl text-white">
           <a href={developer.insta} target="_blank" rel="noopener noreferrer" className="hover:text-pink-500 transition">
             <FaInstagram />
           </a>

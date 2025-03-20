@@ -11,7 +11,7 @@ const PhotographyLeadCard: React.FC<{ lead: PhotographyType }> = ({ lead }) => {
       <motion.div
         whileHover={{ scale: 1.05 }}
         transition={{ type: "spring", stiffness: 200, damping: 10 }}
-        className="relative bg-white p-6 rounded-2xl shadow-xl border border-gray-300 
+        className="relative bg-white/10 backdrop-blur-lg p-6 rounded-2xl shadow-xl border border-gray-300 
                    w-full max-w-xs flex flex-col items-center text-center text-gray-900
                    hover:shadow-2xl transition-shadow duration-300"
       >
@@ -23,7 +23,7 @@ const PhotographyLeadCard: React.FC<{ lead: PhotographyType }> = ({ lead }) => {
         />
 
         {/* 🔹 Name */}
-        <h3 className="mt-4 text-lg sm:text-xl font-bold tracking-wide">{lead.name}</h3>
+        <h3 className="mt-4 text-white text-lg sm:text-xl font-bold tracking-wide">{lead.name}</h3>
       </motion.div>
     </div>
   );

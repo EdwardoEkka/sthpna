@@ -1,8 +1,5 @@
 const Videography = [
-    {
-        img: "/imgs/Videography/ayushpanda.jpg",
-        name: "Ayush Panda"
-    },
+    
     {
         img: "/imgs/Videography/AbhayKumarSahani.jpg",
         name: "Abhay Kumar Sahani"
