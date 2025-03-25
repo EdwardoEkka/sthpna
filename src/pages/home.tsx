@@ -3,7 +3,7 @@ import HomeCarousel from "../components/home-carousel";
 import CoordinatorsList from "../components/coordinators";
 import ProfileCard from "../components/developer";
 import NoticeBoardCard from "../components/Noticeboard";
-import { easeInOut, motion,  } from "framer-motion";
+import { easeInOut, motion } from "framer-motion";
 
 function Home() {
   return (
@@ -194,6 +194,45 @@ function Home() {
                 and industry collaboration equips graduates to drive resilient
                 infrastructure and sustainable development.
               </p>
+            </div>
+          </motion.div>
+
+          {/* Faculty Advisor Card */}
+          <motion.div
+            className="p-4 bg-white/10 backdrop-blur-lg border border-white/20 shadow-lg rounded-md grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-20 items-center"
+            initial={{ x: 100, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 1.8, delay: 1.7, ease: easeInOut }}
+          >
+            {/* HOP Details */}
+            <div className="col-span-1 md:col-span-2 order-2 md:order-1">
+              <h1 className="font-bold text-xl mb-2">FACULTY ADVISOR</h1>
+              <h2 className="font-bold text-lg mb-2">
+                Ms. Rupashree Ragini Sahoo
+              </h2>
+              <p className="text-gray-300 text-justify">
+                As faculty, we are committed to helping you advance academically
+                and professionally as you pursue your education and prepare for
+                a career in civil engineering to equip you to meet the demands
+                of the engineering profession. We aim to create an atmosphere
+                where you may develop both your technical skills and leadership
+                skills. We are interested in helping students comprehend how
+                engineering principles are used in real-world situations,
+                Encouraging moral behavior, and simulating creative thinking. We
+                yearn to establish chances for practical learning, peer
+                collaboration, and interaction with professionals in the field
+                through civil engineering society. 
+              </p>
+            </div>
+            {/* HOP Image */}
+            <div className="w-full flex justify-center md:justify-start order-1 md:order-2">
+              <div className="p-2 border rounded-md border-red-600">
+                <img
+                  src="https://www.vssut.ac.in/faculty/rupashree-ragini-sahoo1413636602.jpg"
+                  alt="Fculty advisor"
+                  className="w-[150px] sm:w-[250px] rounded-md object-cover"
+                />
+              </div>
             </div>
           </motion.div>
         </div>

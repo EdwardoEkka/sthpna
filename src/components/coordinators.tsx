@@ -60,7 +60,7 @@ const CoordinatorCard = ({ coordinator }: CoordinatorProps) => {
 const CoordinatorsList = () => {
   return (
     <div className="container mx-auto p-6 flex flex-col items-center">
-      <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6 text-center">Society Coordinators</h2>
+      <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6 text-center">Society Coordinators-2025</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8">
         {Coordinators.map((coordinator, index) => (
           <CoordinatorCard key={index} coordinator={coordinator} />
