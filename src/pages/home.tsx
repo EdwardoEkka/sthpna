@@ -245,7 +245,7 @@ function Home() {
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 2, delay: 2.2, ease: easeInOut }}
       >
-        <CoordinatorsList />
+        {/* <CoordinatorsList /> */}
       </motion.section>
     </div>
   );
