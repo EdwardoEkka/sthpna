@@ -7,7 +7,8 @@ const NoticeBoardCard: React.FC = () => {
       title: "Civil-Secretaries 2025",
       description:
         "Secretaries For Session of 2025",
-      pdfLink: "https://i.postimg.cc/dt3Lb913/Civil-Secretaries-2025.png",
+      // pdfLink: "https://i.postimg.cc/dt3Lb913/Civil-Secretaries-2025.png",
+      pdfLink: "",
     },
     {
       title: "Study Tour Jharsuguda",
