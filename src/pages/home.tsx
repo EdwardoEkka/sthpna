@@ -59,7 +59,8 @@ function Home() {
               </li>
               <li>
                 <a
-                  href="https://smallpdf.com/file#s=f97ad00c-5c01-4cc7-97f2-f1a298fdf096"
+                  // href="https://smallpdf.com/file#s=f97ad00c-5c01-4cc7-97f2-f1a298fdf096"
+                  href=""
                   className="text-blue-400 hover:underline"
                 >
                   {" "}

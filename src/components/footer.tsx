@@ -17,7 +17,7 @@ const Footer = () => {
               />
             </div>
             <p className="text-gray-400">
-              © 2024 Sthapna. All rights reserved.
+              © 2024 Sthapna. All rights reserved to Sunil Kumar Bal.
             </p>
           </div>
         </div>
