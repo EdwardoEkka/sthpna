@@ -15,9 +15,9 @@ const Lead = () => {
   return (
     <div className="bg-white/10 backdrop-blur-lg min-h-screen text-white flex flex-col items-center">
       {/* 🔹 Coordinators Section */}
-      <section className="py-10 ">
+      {/* <section className="py-10 ">
         <CoordinatorsList />
-      </section>
+      </section> */}
 
       {/* 🔹 Developer & Designer Section */}
       <section className="w-full flex flex-col items-center py-16 px-4">

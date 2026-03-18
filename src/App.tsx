@@ -29,7 +29,7 @@ const App: React.FC = () => {
         <Route path="/sthapna" element={<Stapna />} />
         <Route path="/btech" element={<Btech/>}/>
         <Route path="/students/mtech" element={<Mtech/>}/>
-        {/* <Route path="/students/lead" element={<Lead/>}/> */}
+        <Route path="/students/lead" element={<Lead/>}/>
         <Route path="/students/btech/2025" element={<Btechfinal/>}/>
         <Route path="/students/btech/2026" element={<Btechprefinal/>}/>
         <Route path="/students/btech/2028" element={<Btechfirst/>}/>
