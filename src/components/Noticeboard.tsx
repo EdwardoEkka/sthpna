@@ -48,7 +48,7 @@ const NoticeBoardCard: React.FC = () => {
                   <FaFilePdf /> <span>View PDF</span>
                 </a>
               )}
-              {notice.externalLink && (
+              {/* {notice.externalLink && (
                 <a
                   href={notice.externalLink}
                   target="_blank"
@@ -57,7 +57,7 @@ const NoticeBoardCard: React.FC = () => {
                 >
                   <FaExternalLinkAlt /> <span>Read More</span>
                 </a>
-              )}
+              )} */}
             </div>
           </div>
         ))}
